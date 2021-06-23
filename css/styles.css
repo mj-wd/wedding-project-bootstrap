@@ -28,6 +28,11 @@ header h2 {
 .navbar {
   background-color: #901CAD; }
 
+#homePageThumbs {
+  height: 250px;
+  width: auto;
+}
+
 .carousel {
   border: solid #5637dd; }
 
@@ -39,6 +44,15 @@ header h2 {
   right: 0;
   bottom: 0;
   z-index: 100; }
+
+  #carouselImages {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    line-height: 1;
+    margin:auto;
+    width: auto // Add this
+    }
 
 .tab-content {
   border: 1px solid #DDD;
