@@ -34,9 +34,11 @@ rgb(234,231,196)
 
 body {
   font-family: "Open Sans", sans-serif; }
+
 body, html{
   font-family: "Open Sans", sans-serif;
   height:100%;
+  margin-top: 20;
 }
 
 .hero {
@@ -94,7 +96,7 @@ h3 {
   bottom: 0;
   z-index: 100; }
 
-  #carouselImages {
+#carouselImages {
     height: 500px;
     width: auto;
     }

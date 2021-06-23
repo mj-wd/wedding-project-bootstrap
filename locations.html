@@ -19,27 +19,29 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-sm navbar-light sticky-top">
+    <nav class="navbar navbar-expand-sm fixed-bottom navbar-light">
         <div class="container">
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar">
+        <button class="navbar-toggler mr-auto mt-2 mt-lg-0" type="button" data-toggle="collapse" data-target="#navbar">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbar">
+        <div class="col col-md-9 collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home Page</a></li>
                 <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fas fa-people-arrows"></i></i> About Us</a></li>
                 <li class="nav-item"><a class="nav-link active" href="#"><i class="fas fa-map-marker-alt"></i> Locations</a></li>
                 <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-hamburger"></i></i> Dinner Menu</a></li>
                 <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-gift"></i></i> Gift Registry</a></li>
-                <li class="nav-item" data-toggle="modal" data-target="#rsvpModal" id="#rsvpModal" ><i class="fas fa-envelope-open-text"></i> RSVP</li>
             </ul>
+        </div>
+        <div class="col col-md-3">
+            <a class="nav-item my-2 my-sm-0 align-items-center" data-toggle="modal" href="#foo" data-target="#rsvpModal" id="#rsvpModal" ><i class="fas fa-envelope-open-text"></i> RSVP</a>
         </div>
     </nav>
 
     <div id="rsvpModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-dialog modal-md" role="document">
             <div class="modal-content">
-                <div class="modal-header bg-info text-white">
+                <div class="modal-header bg-secondary text-gold">
                     <h3>RSVP</h3>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -47,12 +49,24 @@
                     <div class="container-fluid">
                         <form>
                             <div class="form-group row">
-                                <div class="col-sm-6 col-form-label">
-                                    <label for="Number-of-Campers">Number of Campers</label>
+                                <i for="firstName" class="col-md-2 col-form-label fas fa-id-card fa-2x"></i>
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
                                 </div>
-                                <div class="col-sm-6 col-form-label">
-                                    <select name="numCampers" id="Number-of-Campers" class="form-control form-group">
-                                        <option value="select">Select...</option>
+                            </div>
+                            <div class="form-group row">
+                                <i for="lastName" class="col-md-2 col-form-label fas fa-id-card fa-2x"></i>
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-2 col-form-label">
+                                    <i for="Number-of-Campers" class="fas fa-user-friends fa-2x"></i>
+                                </div>
+                                <div class="col-md-10">
+                                    <select name="numOfGuests" id="Number-of-Guests" class="form-control form-group">
+                                        <option value="select">Number of Guests in Your Party</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -63,24 +77,15 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="date" class="col-sm-6">Date</label>
-                                <div class="col-sm-6 col-form-label">
-                                <input type="date" id="date" class="form-control form-group"/>
+                                <i for="telNumber" class="col-md-2 col-form-label fas fa-phone-square-alt fa-2x"></i>
+                                <div class="col-md-10">
+                                    <input type="tel" class="form-control" id="telNumber" name="telNumber" placeholder="Tel. number" />
                                 </div>
                             </div>
                             <div class="form-group row">
-                            <label class="col-sm-6 col-form-label">Campsite Type</label>
-                            <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
-                                <label class="btn btn-success active"> 
-                                    <input type="radio" name="siteType" id="siteTent" value="tent">Tent</label>
-                                <label class="btn btn-primary">
-                                    <input type="radio" name="siteType" id="siteRV" value="RV">RV</label>
-                            </div>
-                            </div>
-                            <div class="row form-group">
-                                <div class = "col">
-                                    <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                                    <button class="btn btn-primary" type="submit">Search</button>
+                                <i for="email" class="col-md-2 col-form-label fas fa-envelope-square fa-2x"></i>
+                                <div class="col-md-10">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" />
                                 </div>
                             </div>
                         </form>
@@ -90,33 +95,7 @@
         </div>
     </div>
 
-    <!-- <header class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                </div>
-                <div class="col">
-                    <h1>Justine & Mark</h1>
-                    <h2>are getting married</h2>
-                </div>
-                <div class="col-md-4 col-xl-2 mt-4 align-self-center">
-                    <a class="btn btn-lg btn-info text-nowrap" role="button" data-toggle="modal" data-target="#rsvpModal" id="#rsvpModal">RSVP</a>
-                </div>
-            </div>
-        </div>
-    </header> -->
-
-    <div class="container">
-        <div class="row row-content">
-            <div class="col-sm-12">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active">About Us</li>
-                </ol>
-            <h2>About Us</h2>
-        <hr/>
-    </div>
-</div>
+    <div class="container mt-auto">
 
         <div class="row row-content align-items-center">
             <div class="col-sm-4">
@@ -129,7 +108,7 @@
             </div>
             <div class="col">
 				<a role="button" class="btn btn-link" href="tel:+12065551264"><i class="fa fa-phone"></i> 1-206-555-1234</a><br>
-            	<a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
+            	<a role="button" class="btn btn-link" href="mailto:justineymark@gmail.com"><i class="fa fa-envelope-o"></i> justineymark@gmail.com</a>
             </div>
         </div>
 
@@ -193,33 +172,6 @@
             </div>
        </div>
     </div>
-
-    <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-4 col-sm-2 offset-1">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="aboutus.html">About</a></li>
-                        <li><a href="#">Sites</a></li>
-                        <li><a href="#">RSVP</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-sm-5 text-center">
-                    <h5>Social</h5>
-                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-                    <a class="btn button btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                    <a class="btn button btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br />
-                    <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
-                </div>
-           </div>
-        </div>
-    </footer>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <!-- build:js js/main.js -->
