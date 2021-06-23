@@ -34,6 +34,18 @@ rgb(234,231,196)
 
 body {
   font-family: "Open Sans", sans-serif; }
+body, html{
+  font-family: "Open Sans", sans-serif;
+  height:100%;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/kiss.jpg);
+  background-position-x:center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  height:100%
+}
 
 h1 {
   font-family: 'Dancing Script', cursive;
@@ -56,11 +68,6 @@ h3 {
   padding: 30px;
   background-image: linear-gradient(to right, #226C3B, #f8f8ff , #b9a149);
   color: white; }
-
-.row-content {
-  padding: 50px 0;
-  border-bottom: 1px ridge;
-  min-height: 200px; }
 
 .navbar {
   background-color: #eae7c4;
@@ -87,10 +94,10 @@ h3 {
   bottom: 0;
   z-index: 100; }
 
-#carouselImages {
-  height: 500px;
-  width: auto
-  }
+  #carouselImages {
+    height: 500px;
+    width: auto;
+    }
 
 .tab-content {
   border: 1px solid #DDD;
