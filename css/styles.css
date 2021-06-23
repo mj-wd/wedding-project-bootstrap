@@ -1,3 +1,39 @@
+/*
+inspiration:
+
+https://zyro.com/blog/wedding-website-examples/
+
+audio::
+
+Fly me to the Moon by Frank Sinatra
+
+colors:
+
+gold
+#b9a149
+#ca5
+peru
+hsl(47,44%,50%)
+rgb(185,161,73)
+
+off-white
+#f8f8ff
+#fff
+ghostwhite
+hsl(240,100%,98%)
+rgb(248,248,255)
+
+
+
+bisque
+#eae7c4
+#fecbisque
+hsl(55,47%,84%)
+rgb(234,231,196)
+*/
+
+body {
+  font-family: "Open Sans", sans-serif; }
 body, html{
   font-family: "Open Sans", sans-serif;
   height:100%;
@@ -11,14 +47,17 @@ body, html{
   height:100%
 }
 
-h1, h2, h3 {
-  font-family: "Lobster", cursive; }
+h1 {
+  font-family: 'Dancing Script', cursive;
+  color: #042c12; }
 
 h2 {
-  color: #226C3B; }
+  font-family: 'Dancing Script', cursive;    
+  color: black; }
 
-header h2 {
-  color: #CEC8FF; }
+h3 {
+  font-family: 'Dancing Script', cursive;      
+  color: #eae7c4; }
 
 .site-footer {
   background-image: linear-gradient(#CEC8FF, white);
@@ -27,11 +66,12 @@ header h2 {
 .jumbotron {
   margin: 0;
   padding: 30px;
-  background-image: linear-gradient(to right, #5637dd, #226C3B, #60106b);
+  background-image: linear-gradient(to right, #226C3B, #f8f8ff , #b9a149);
   color: white; }
 
 .navbar {
-  background-color: #901CAD; }
+  background-color: #eae7c4;
+}
 
 #homePageThumbs {
   height: 250px;
@@ -43,6 +83,10 @@ header h2 {
 
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.5); }
+
+#carouselText {
+  font-family: "Lobster", cursive;
+  color: #eae7c4; }
 
 #carouselButton {
   position: absolute;
