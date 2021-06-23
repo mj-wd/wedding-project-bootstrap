@@ -1,5 +1,15 @@
-body {
-  font-family: "Open Sans", sans-serif; }
+body, html{
+  font-family: "Open Sans", sans-serif;
+  height:100%;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/kiss.jpg);
+  background-position-x:center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  height:100%
+}
 
 h1, h2, h3 {
   font-family: "Lobster", cursive; }
@@ -19,11 +29,6 @@ header h2 {
   padding: 30px;
   background-image: linear-gradient(to right, #5637dd, #226C3B, #60106b);
   color: white; }
-
-.row-content {
-  padding: 50px 0;
-  border-bottom: 1px ridge;
-  min-height: 200px; }
 
 .navbar {
   background-color: #901CAD; }
@@ -46,12 +51,8 @@ header h2 {
   z-index: 100; }
 
   #carouselImages {
-    display: block;
-    height: auto;
-    max-width: 100%;
-    line-height: 1;
-    margin:auto;
-    width: auto // Add this
+    height: 500px;
+    width: auto;
     }
 
 .tab-content {
