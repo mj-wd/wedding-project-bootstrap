@@ -23,8 +23,6 @@ ghostwhite
 hsl(240,100%,98%)
 rgb(248,248,255)
 
-
-
 bisque
 #eae7c4
 #fecbisque
@@ -33,7 +31,8 @@ rgb(234,231,196)
 */
 
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+}
 
 body, html{
   font-family: "Open Sans", sans-serif;
@@ -50,29 +49,30 @@ body, html{
 }
 
 h1 {
-  font-family: 'Dancing Script', cursive;
-  color: #042c12; }
+  font-family: 'Dancing Script', "Open Sans", sans-serif, cursive;
+  color: #042c12; 
+}
 
 h2 {
-  font-family: 'Dancing Script', cursive;    
-  color: black; }
+  font-family: 'Charmonman', cursive;
+  color: #042c12;
+}
 
-h3 {
-  font-family: 'Dancing Script', cursive;      
-  color: #eae7c4; }
+h3, h4, h5 {
+  font-family: 'Dancing Script', "Open Sans", sans-serif, cursive;    
+  color: black; 
+}
 
 .site-footer {
   background-image: linear-gradient(#CEC8FF, white);
   padding: 20px 0; }
 
-.jumbotron {
-  margin: 0;
-  padding: 30px;
-  background-image: linear-gradient(to right, #226C3B, #f8f8ff , #b9a149);
-  color: white; }
-
 .navbar {
   background-color: #eae7c4;
+}
+
+#rsvpModal {
+  align: right;
 }
 
 #homePageThumbs {
