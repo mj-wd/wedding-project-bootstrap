@@ -33,23 +33,19 @@ hsl(55,47%,84%)
 rgb(234,231,196)
 */
 
-body {
-  font-family: "Open Sans", sans-serif;
-}
-
 body, html{
   font-family: "Open Sans", sans-serif;
-  height:100%;
-  margin-top: 20;
-  background-image: #f8f8ff
+  height: auto;
+  margin-bottom: 20px;
+  background-image: #f8f8ff;
 }
 
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/kiss.jpg);
-  background-position-x:center;
+  background-position-x: center;
   background-repeat: no-repeat;
-  background-size:cover;
-  height:100%
+  background-size: cover;
+  height: 100%;
 }
 
 h1, h2 {
@@ -77,7 +73,7 @@ h3, h4, h5 {
 }
 
 #rsvpNavbarText {
-  color: black !important;
+  color: #008264;
   font-family: "Charmonman", "Open Sans", sans-serif, cursive;
   font-size: 20px;
   text-align: center;
@@ -86,9 +82,15 @@ h3, h4, h5 {
 }
 
 #modalIcon {
+  color: black;
   vertical-align: middle;
-  font-size: 30px;
 }
+
+#modalText { 
+  font-size: auto;
+  font-family: "Open Sans", sans-serif;
+}
+
 
 /* #homePageThumbs {
   height: 250px;
