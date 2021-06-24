@@ -41,7 +41,7 @@
                 </ul>
             </div>
             <div class="col col-md-3">
-                <a class="nav-item my-2 my-sm-0 align-items-center" data-toggle="modal" href="#foo" data-target="#rsvpModal" id="#rsvpModal" ><i class="fas fa-envelope-open-text"></i> RSVP</a>
+                <a class="nav-item my-2 my-sm-0 fas fa-envelope-open-text" data-toggle="modal" href="#foo" data-target="#rsvpModal" id="#rsvpModal"><i id="rsvpNavbarText"> RSVP/Contact<i></a>
             </div>
         </div>
     </nav>
@@ -49,28 +49,28 @@
     <div id="rsvpModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-md" role="document">
             <div class="modal-content">
-                <div class="modal-header bg-secondary text-gold">
-                    <h3>RSVP</h3>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div class="modal-header bg-primary">
+                    <h3>RSVP/Contact</h3>
+                    <button type="button" class="close" data-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
                         <form>
                             <div class="form-group row">
-                                <i class="col-md-2 col-form-label fas fa-id-card fa-2x"></i>
+                                <i class="col-md-2 col-form-label fas fa-id-card" id="modalIcon"></i>
                                 <div class="col-md-10">
                                     <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <i class="col-md-2 col-form-label fas fa-id-card fa-2x"></i>
+                                <i class="col-md-2 col-form-label fas fa-id-card" id="modalIcon"></i>
                                 <div class="col-md-10">
                                     <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <div class="col-md-2 col-form-label">
-                                    <i class="fas fa-user-friends fa-2x"></i>
+                                    <i class="fas fa-user-friends" id="modalIcon"></i>
                                 </div>
                                 <div class="col-md-10">
                                     <select name="numOfGuests" id="Number-of-Guests" class="form-control form-group">
@@ -85,43 +85,38 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <i class="col-md-2 col-form-label fas fa-phone-square-alt fa-2x"></i>
+                                <i class="col-md-2 col-form-label fas fa-phone-square-alt" id="modalIcon"></i>
                                 <div class="col-md-10">
                                     <input type="tel" class="form-control" id="telNumber" name="telNumber" placeholder="Tel. number" />
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <i class="col-md-2 col-form-label fas fa-envelope-square fa-2x"></i>
+                                <i class="col-md-2 col-form-label fas fa-envelope-square" id="modalIcon"></i>
                                 <div class="col-md-10">
                                     <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" />
                                 </div>
                             </div>
+                            <div class="row form-group">
+                                <div class = "col">
+                                    <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col">
+                                    <a class="btn btn-link text-black-align" id="emailIcon" href="mailto:justineymark@gmail.com"><i class="fas fa-envelope fa-2x"></i> justineymark@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col">
+                                    <a class="btn btn-social-icon btn-instagram" id="instagramIcon" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                                </div>
+                            </div>
                         </form>
-                    </div>                                                    
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
-                            class="fa fa-instagram"></i></a>
-                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
-                            class="fa fa-facebook"></i></a>
-                    <a class="btn button btn-social-icon btn-twitter" href="http://twitter.com/"><i
-                            class="fa fa-twitter"></i></a>
-                    <a class="btn button btn-social-icon btn-google" href="http://youtube.com/"><i
-                            class="fa fa-youtube"></i></a>
-                </div>
-                <div class="col-6">
-                    <a role="button" class="btn btn-link text-white" href="mailto:justineymark@gmail.com"><i class="fas fa-envelope"></i> justineymark@gmail.com</a>
-                </div>
-            </div>
-        </div>
-    </footer>
 
     <!-- jQuery must come first, then Popper.js (for pop-ups, tooltips, & most dropdown menus, then the Bootstrap JavaScript plugins.-->
     <!-- build:js js/main.js -->

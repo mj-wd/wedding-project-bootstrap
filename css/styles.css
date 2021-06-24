@@ -3,7 +3,7 @@ inspiration:
 
 https://zyro.com/blog/wedding-website-examples/
 
-audio::
+audio:
 
 Fly me to the Moon by Frank Sinatra
 
@@ -41,6 +41,7 @@ body, html{
   font-family: "Open Sans", sans-serif;
   height:100%;
   margin-top: 20;
+  background-image: #f8f8ff
 }
 
 .hero {
@@ -52,40 +53,47 @@ body, html{
 }
 
 h1, h2 {
-  font-family: 'Charmonman', "Open Sans", sans-serif, cursive;
-  color: #042c12;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  font-family: "Charmonman", "Open Sans", sans-serif, cursive;
+  color: black;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 h3, h4, h5 {
-  font-family: 'Dancing Script', "Open Sans", sans-serif, cursive;    
-  color: #042c12;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  font-family: "Dancing Script", "Open Sans", sans-serif, cursive;
+  color: black;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
-.site-footer {
-  background-image: linear-gradient(#008264, #f8f8ff);
-  padding-top: 10px;
-  padding-bottom: 50px;
-  padding-right: 50px;
-  padding-bottom: 60px;
-  position: static;
-  margin-top: 20px;
-  left: 0;
-  width: 100%;
-  text-align: center;
+#catedral, #hotel {
+  float: right;
+  border-radius: 50% 20% / 10% 40%;; 
+  padding-bottom: 20px;
 }
 
 .navbar {
   background-color: #eae7c4;
 }
 
-#homePageThumbs {
+#rsvpNavbarText {
+  color: black !important;
+  font-family: "Charmonman", "Open Sans", sans-serif, cursive;
+  font-size: 20px;
+  text-align: center;
+  display: inline-block;
+  width: 80px;  
+}
+
+#modalIcon {
+  vertical-align: middle;
+  font-size: 30px;
+}
+
+/* #homePageThumbs {
   height: 250px;
   width: auto;
-}
+} */
 
 /* .carousel {
   border: solid #5637dd; }
@@ -111,7 +119,8 @@ h3, h4, h5 {
 .tab-content {
   border: 1px solid #DDD;
   border-top: none;
-  padding: 10px; }
+  padding: 10px; 
+}
 
 a, a:hover {
   color: inherit;
