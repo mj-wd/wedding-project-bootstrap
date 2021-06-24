@@ -16,6 +16,9 @@ peru
 hsl(47,44%,50%)
 rgb(185,161,73)
 
+emaerald green
+#008264
+
 off-white
 #f8f8ff
 #fff
@@ -49,18 +52,31 @@ body, html{
 }
 
 h1, h2 {
-  font-family: 'Dancing Script', "Open Sans", sans-serif, cursive;
-  color: #042c12; 
+  font-family: 'Charmonman', "Open Sans", sans-serif, cursive;
+  color: #042c12;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 h3, h4, h5 {
   font-family: 'Dancing Script', "Open Sans", sans-serif, cursive;    
-  color: black; 
+  color: #042c12;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .site-footer {
-  background-image: linear-gradient(#CEC8FF, white);
-  padding: 20px 0; }
+  background-image: linear-gradient(#008264, #f8f8ff);
+  padding-top: 10px;
+  padding-bottom: 50px;
+  padding-right: 50px;
+  padding-bottom: 60px;
+  position: static;
+  margin-top: 20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
 
 .navbar {
   background-color: #eae7c4;
@@ -71,7 +87,7 @@ h3, h4, h5 {
   width: auto;
 }
 
-.carousel {
+/* .carousel {
   border: solid #5637dd; }
 
 .carousel-caption {
@@ -90,7 +106,7 @@ h3, h4, h5 {
 #carouselImages {
     height: 500px;
     width: auto;
-    }
+    } */
 
 .tab-content {
   border: 1px solid #DDD;
