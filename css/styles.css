@@ -16,28 +16,15 @@ peru
 hsl(47,44%,50%)
 rgb(185,161,73)
 
-emerald green
-#008264
-
-off-white
-#f8f8ff
-#fff
-ghostwhite
-hsl(240,100%,98%)
-rgb(248,248,255)
-
-bisque
-#eae7c4
-#fecbisque
-hsl(55,47%,84%)
-rgb(234,231,196)
+sea green
+#28a745
 */
 
 body, html{
   font-family: "Open Sans", sans-serif;
   height: auto;
   margin-bottom: 20px;
-  background-image: #f8f8ff;
+  background-color: #fffaf0;
 }
 
 .hero {
@@ -56,29 +43,38 @@ h1, h2 {
 }
 
 h3, h4, h5 {
-  font-family: "Open Sans", sans-serif, cursive;
+  font-family: "Open Sans", sans-serif;
+  font-size: auto;
   color: black;
   margin-top: 30px;
   margin-bottom: 10px;
 }
 
-#catedral, #hotel {
+#catedralImg, #hotelImg {
   float: right;
   border-radius: 50% 20% / 10% 40%;; 
   padding-bottom: 20px;
 }
 
+#angel, #church-him {
+  width: 450px;
+  height: auto;
+}
+
 .navbar {
   background-color: #eae7c4;
+  padding-left: 100px;
+  padding-right: auto;
+}
+
+#navbarIcons {
+  align-items: center;
 }
 
 #rsvpNavbarText {
-  color: #008264;
+  color: #28a745;
   font-family: "Charmonman", "Open Sans", sans-serif, cursive;
   font-size: 20px;
-  text-align: center;
-  display: inline-block;
-  width: 80px;  
 }
 
 #modalIcon {
