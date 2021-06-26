@@ -16,79 +16,87 @@ peru
 hsl(47,44%,50%)
 rgb(185,161,73)
 
-emerald green
-#008264
-
-off-white
-#f8f8ff
-#fff
-ghostwhite
-hsl(240,100%,98%)
-rgb(248,248,255)
-
-bisque
-#eae7c4
-#fecbisque
-hsl(55,47%,84%)
-rgb(234,231,196)
+sea green
+#28a745
 */
-
-body {
-  font-family: "Open Sans", sans-serif;
-}
 
 body, html{
   font-family: "Open Sans", sans-serif;
-  height:100%;
-  margin-top: 20;
-  background-image: #f8f8ff
+  height: auto;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  background-color: #F6F8E3;
 }
 
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/kiss.jpg);
-  background-position-x:center;
+  background-position-x: center;
   background-repeat: no-repeat;
-  background-size:cover;
-  height:100%
+  background-size: cover;
+  height: 100%;
 }
 
 h1, h2 {
   font-family: "Charmonman", "Open Sans", sans-serif, cursive;
   color: black;
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 h3, h4, h5 {
-  font-family: "Open Sans", sans-serif, cursive;
+  font-family: "Open Sans", sans-serif;
+  font-size: auto;
   color: black;
   margin-top: 30px;
   margin-bottom: 10px;
 }
 
-#catedral, #hotel {
+#catedralImg, #hotelImg {
   float: right;
   border-radius: 50% 20% / 10% 40%;; 
   padding-bottom: 20px;
 }
 
+#angel, #church-him {
+  width: 375px;
+  height: auto;
+  margin-top: 20px;
+}
+
 .navbar {
   background-color: #eae7c4;
+  padding-left: 100px;
+  padding-right: auto;
+}
+
+#navbarIcons {
+  align-items: center;
 }
 
 #rsvpNavbarText {
-  color: black !important;
+  color: #28a745;
   font-family: "Charmonman", "Open Sans", sans-serif, cursive;
   font-size: 20px;
-  text-align: center;
-  display: inline-block;
-  width: 80px;  
 }
 
 #modalIcon {
+  color: black;
   vertical-align: middle;
-  font-size: 30px;
 }
+
+#modalText { 
+  font-size: auto;
+  font-family: "Open Sans", sans-serif;
+  vertical-align: middle;
+}
+
+#modalButton { 
+  font-size: auto;
+  font-family: "Open Sans", sans-serif;
+  align-items: center;
+}
+
+
 
 /* #homePageThumbs {
   height: 250px;
