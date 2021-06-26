@@ -57,11 +57,21 @@ h3, h4, h5 {
   padding-bottom: 20px;
 }
 
+/*rename w/ .Img*/
 #angel, #church-him {
   width: 375px;
   height: auto;
   margin-top: 20px;
 }
+
+#jarImg {
+  width: auto;
+  height: 300px;
+  margin-top: 20px;
+  /*why doesn't this work?*/
+  align-self: center;
+}
+
 
 .navbar {
   background-color: #eae7c4;
