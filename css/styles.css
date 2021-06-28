@@ -24,7 +24,7 @@ body, html{
   font-family: "Open Sans", sans-serif;
   height: auto;
   margin-top: 0px;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
   background-color: #F6F8E3;
 }
 
@@ -58,7 +58,7 @@ h3, h4, h5 {
 }
 
 /*rename w/ .Img*/
-#angel, #church-him {
+#angelImg, #church-himImg {
   width: 375px;
   height: auto;
   margin-top: 20px;
@@ -66,10 +66,9 @@ h3, h4, h5 {
 
 #jarImg {
   width: auto;
-  height: 300px;
-  margin-top: 20px;
-  /*why doesn't this work?*/
-  align-self: center;
+  height: 350px;
+  align-items: middle;
+  /* margin-top: 20px; */
 }
 
 
