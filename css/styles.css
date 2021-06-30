@@ -23,11 +23,10 @@ sea green
 body, html{
   font-family: "Open Sans", sans-serif;
   height:100%;
-  background-image:url(/img/kiss.jpg);
 }
 
 .hero {
-
+  background-image:url(/img/kiss.jpg);
   background-position-x:center;
   background-repeat: no-repeat;
   background-size:cover;
