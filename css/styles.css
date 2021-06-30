@@ -22,19 +22,19 @@ sea green
 
 body, html{
   font-family: "Open Sans", sans-serif;
-  height: auto;
-  margin-top: 10px;
-  margin-bottom: 100px;
-  background-color: #F6F8E3;
+  height:100%;
+  background-image:url(/img/kiss.jpg);
 }
 
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/kiss.jpg);
-  background-position-x: center;
+
+  background-position-x:center;
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
+  background-size:cover;
+  max-width: 100%;
+
 }
+
 
 h1, h2 {
   font-family: "Charmonman", "Open Sans", sans-serif, cursive;
