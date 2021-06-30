@@ -25,23 +25,22 @@
         <img class="img-fluid" src="img/kiss.jpg" alt="Breadcrumb Trail thumbnail">
     </div>
 
-    <div class="container">
-        <nav class="navbar navbar-expand-sm fixed-bottom navbar-light">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar">
+    <nav class="navbar navbar-expand-md navbar-light fixed-bottom">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="#"><i class="fas fa-home"></i> Home Page</a></li>
-                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fas fa-people-arrows"></i> About Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fas fa-people-arrows"></i> About</a></li>
                     <li class="nav-item"><a class="nav-link" href="locations.html"><i class="fas fa-map-marker-alt"></i> Locations</a></li>
-                    <li class="nav-item"><a class="nav-link" href="dinner-menu.html"><i class="fas fa-hamburger"></i> Dinner Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dinner-menu.html"><i class="fas fa-hamburger"></i> Dinner</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-gift"></i> Gift Registry</a></li>
                 </ul>
             </div>
-            <div class="col col-md-3">
-                <a class="nav-item my-2 my-sm-0 fas fa-envelope-open-text" data-toggle="modal" href="#foo" data-target="#rsvpModal"><i id="rsvpNavbarText"> RSVP/Contact<i></a>
-            </div>
+            <span class="align-text-bottom" id="modalTogglerText" data-toggle="modal" href="#foo" data-target="#rsvpModal">RSVP/Contact   <a class="nav-item fas fa-envelope-open-text" id="modalToggler" data-toggle="modal" href="#foo" data-target="#rsvpModal">
+            </a></span>
         </nav>
     </div>
 
@@ -54,6 +53,18 @@
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
+                        <div class="form-group row">
+                                <label class="col-md-5 col-form-label" id="modalText">Will you be joining us?</label>
+                                <div class="col-md-1 form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioButton1" value="yes">
+                                    <label class="form-check-label" for="radioButton1" id="modalText">Yes</label>
+                                </div>
+                                <div class="col-md-1 form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioButton2" value="no">
+                                    <label class="form-check-label" for="radioButton2" id="modalText">No</label>
+                                </div>
+                            </div>
+                        </div>
                         <form>
                             <div class="form-group row">
                                 <i class="col-md-2 col-form-label fas fa-id-card" id="modalIcon"></i>
