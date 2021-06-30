@@ -40,17 +40,18 @@ body {
 body, html{
   font-family: "Open Sans", sans-serif;
   height:100%;
-  margin-top: 20;
-  background-image: #f8f8ff
+  background-image:url(/img/kiss.jpg);
 }
 
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/img/kiss.jpg);
+
   background-position-x:center;
   background-repeat: no-repeat;
   background-size:cover;
-  height:100%
+  max-width: 100%;
+
 }
+
 
 h1, h2 {
   font-family: "Charmonman", "Open Sans", sans-serif, cursive;
