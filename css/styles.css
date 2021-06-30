@@ -23,25 +23,33 @@ sea green
 body, html{
   font-family: "Open Sans", sans-serif;
   height:100%;
-  margin-top:20;
-  background-image: #f8f8ff;
+  background-color: #f6f8e3;
+}
+
+.hero-container {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
 }
 
 .hero {
-  background-image:url(/img/kiss.jpg);
-  background-position-x:center;
-  background-repeat: no-repeat;
-  background-size:cover;
-  max-width: 100%;
-
+  background: url(/img/kiss.jpg);
+  background-size: cover;
+  height: 100vw;
+  width: 100vw;
 }
 
+.hero-text {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
 
 h1, h2 {
   font-family: "Charmonman", "Open Sans", sans-serif, cursive;
   color: black;
   margin-top: 30px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 h3, h4, h5 {
@@ -59,10 +67,10 @@ p {
 
 #locationsImg {
   border-radius: 50% 20% / 10% 40%;; 
-  padding-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
   float: left;
   transition: transform 0.5s;
-
 }
 
 #locationsImg:hover {
@@ -84,9 +92,8 @@ p {
 }
 
 .navbar {
-  background-color: #F6F8E3;
-  padding-left: 50px;
-  padding-right: 50px;
+  position: sticky;
+  background-color: #f6f8e3;
 }
 
 #modalTogglerText {
