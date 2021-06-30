@@ -23,8 +23,8 @@ sea green
 body, html{
   font-family: "Open Sans", sans-serif;
   height: auto;
-  margin-top: 0px;
-  margin-bottom: 70px;
+  margin-top: 10px;
+  margin-bottom: 100px;
   background-color: #F6F8E3;
 }
 
@@ -51,52 +51,58 @@ h3, h4, h5 {
   margin-bottom: 10px;
 }
 
-#catedralImg, #hotelImg {
-  float: right;
+p {
+  text-align: justify;
+  font-size: auto;
+}
+
+img {
+  transition: transform 0.8s;
+}
+
+img:hover {
+  transform: scale(1.3);
+}
+
+#locationsImg {
   border-radius: 50% 20% / 10% 40%;; 
   padding-bottom: 20px;
+  float: left;
 }
 
-/*rename w/ .Img*/
-#angelImg, #church-himImg {
-  width: 375px;
-  height: auto;
+#aboutTopImg {
   margin-top: 20px;
+  padding-left: 20px;
+  max-width: 60%; 
+  height: auto;
+  float: right;
 }
 
-#jarImg {
-  width: auto;
-  height: 350px;
-  align-items: middle;
-  /* margin-top: 20px; */
+#aboutBottomImg {
+  margin-top: 10px;
+  max-width: 100%;
+  height: auto;
 }
-
 
 .navbar {
-  background-color: #eae7c4;
-  padding-left: 100px;
-  padding-right: auto;
+  background-color: #F6F8E3;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
-#navbarIcons {
-  align-items: center;
-}
-
-#rsvpNavbarText {
+#modalTogglerText {
   color: #28a745;
   font-family: "Charmonman", "Open Sans", sans-serif, cursive;
   font-size: 20px;
-}
-
-#modalIcon {
-  color: black;
-  vertical-align: middle;
+  /*overriding under-the-hood bootstrap default*/
+  padding: 0rem !important;
+  vertical-align: middle
 }
 
 #modalText { 
   font-size: auto;
   font-family: "Open Sans", sans-serif;
-  vertical-align: middle;
+  color: black;
 }
 
 #modalButton { 
@@ -105,7 +111,11 @@ h3, h4, h5 {
   align-items: center;
 }
 
-
+#radioButton1, #radioButton2 {
+  margin-left: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
 
 /* #homePageThumbs {
   height: 250px;
