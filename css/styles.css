@@ -61,7 +61,7 @@ h3, h4, h5 {
 }
 
 p {
-  text-align: justify;
+  text-align: start;
   font-size: auto;
 }
 
@@ -73,22 +73,33 @@ p {
   transition: transform 0.5s;
 }
 
-#locationsImg:hover {
-  transform: scale(1.2);
-}
-
-#aboutTopImg {
+#magic-town-her, #magic-town-him {
   margin-top: 20px;
-  padding-left: 20px;
+  margin-left: 20px;
   max-width: 60%; 
   height: auto;
   float: right;
+  border-radius: 10%;
 }
 
-#aboutBottomImg {
+#jar-her-Img, #jar-him-Img {
   margin-top: 10px;
   max-width: 100%;
-  height: auto;
+  height: 300px;
+  border-radius: 10%;
+  transition: transform 0.5s;
+}
+
+#teotihuacan-shoes {
+  margin-top: 10px;
+  max-width: 100%;
+  height: 605px;
+  border-radius: 10%;
+  transition: transform 0.5s;
+}
+
+#locationsImg:hover, #teotihuacan-shoes:hover, #jar-her-Img:hover, #jar-him-Img:hover {
+  transform: scale(1.2);
 }
 
 .navbar {
