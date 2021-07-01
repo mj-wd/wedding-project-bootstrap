@@ -60,12 +60,12 @@ h3, h4, h5 {
   margin-bottom: 10px;
 }
 
-p {
+p, a {
   text-align: start;
   font-size: auto;
 }
 
-#locationsImg {
+#catedral, #hotel {
   border-radius: 50% 20% / 10% 40%;; 
   margin-top: 30px;
   margin-bottom: 10px;
@@ -75,7 +75,7 @@ p {
 
 #magic-town-her, #magic-town-him {
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 8px;
   max-width: 60%; 
   height: auto;
   float: right;
@@ -102,6 +102,11 @@ p {
   transform: scale(1.2);
 }
 
+.card-header {
+  text-align: center;
+  vertical-align: text-top;
+}
+
 .navbar {
   position: sticky;
   background-color: #f6f8e3;
@@ -116,13 +121,13 @@ p {
   vertical-align: middle
 }
 
-#modalText { 
+.modal-text { 
   font-size: auto;
   font-family: "Open Sans", sans-serif;
   color: black;
 }
 
-#modalButton { 
+.modal-button { 
   font-size: auto;
   font-family: "Open Sans", sans-serif;
   align-items: center;
