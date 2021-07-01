@@ -25,13 +25,13 @@
     <div class="container">
         <div class="row row-content align-items-top">
             <div class="col-md-6">                
-                <a href="https://en.wikipedia.org/wiki/Tlayacapan" target="blank"><img src="img/magic-town-her.jpg" id ="magic-town-her" alt="Justine in Tlayacapan"/></a>
+                <a href="https://en.wikipedia.org/wiki/Tlayacapan" target="blank"><img src="img/magic-town-her.jpg" class="float" id ="magic-town-her" alt="Justine in Tlayacapan"/></a>
                 <h1>About Justine</h1>
-                <p>Justine was born in Satelite, in the State of Mexico. Her occupation is a schoolteacher. Due to the pandemic, she has missed being in the classroom with her students and contributing to their growth. She is highly knowledgeable about Mexican culture, geography, history, and cuisine. She is polite, yet fierce and is the organizer of the relationship. She speaks and writes fluent English and Spanish.
+                <p>Justine was born in Satelite, in the State of Mexico and currently lives in Ciudad López Mateos which is in the same state. Her occupation is a schoolteacher. Due to the pandemic, she has missed being in the classroom with her students and contributing to their growth. She is highly knowledgeable about Mexican culture, geography, history, and cuisine. She is polite, yet fierce and is the organizer of the relationship. She speaks and writes fluent English and Spanish.
                 </p>
             </div>
             <div class="col-md-6">
-                <a href="https://en.wikipedia.org/wiki/Tlayacapan" target="blank"><img src="img/magic-town-him.jpg" id ="magic-town-her" alt="Mark in Tlayacapan"/></a>
+                <a href="https://en.wikipedia.org/wiki/Tlayacapan" target="blank"><img src="img/magic-town-him.jpg" class="float" id ="magic-town-him" alt="Mark in Tlayacapan"/></a>
                 <h1>About Mark</h1>
                 <p>Mark was born in Boston, Massachusetts, has lived in Seattle, Washington, and currently resides in Los Angeles, California. He enjoys his motorcycle, reading, and learning about new cultures as well. He is currently learning web development and contributed to the construction of this website. He is the tech and engineer of the relationship. He speaks fluent English and is learning Spanish.
                 </p>
@@ -58,6 +58,73 @@
         </div>
     </div>
 
+    <div class="container">
+        <div class="row row-content">
+            <div class="col-sm-12" role="tablist">
+                <h1>How much do you know about them?</h1>
+                <h4>Click on each question below to find out.</h4>
+                <div id="accordion">
+                    <div class="card">
+                        <div role="tab" class="card-header bg-success">
+                            <h5>
+                                <a data-toggle="collapse" data-target="#park" role="button">
+                                    What is Justine's favorite National Park in the USA?
+                                </a>
+                            </h5>
+                            <div class="collapse" id="park" data-parent="#accordion">
+                                <div class="card-body bg-white">
+                                    <p class= "d-none d-block">Sequoia National Park</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div role="tab" class="card-header bg-success">
+                            <h5>
+                                <a class="collapsed" data-toggle="collapse" data-target="#UW" role="button">
+                                    Which university did Mark graduate from?
+                                </a>
+                            </h5>
+                            <div class="collapse" id="UW" data-parent="#accordion">
+                                <div class="card-body bg-white">
+                                    <p class= "d-none d-block">The University of Washington</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div role="tab" class="card-header bg-success">
+                            <h5>
+                                <a class="collapsed" data-toggle="collapse" data-target="#flower" role="button">
+                                What is Justine's favorite flower?
+                                </a>
+                            </h5>
+                            <div class="collapse" id="flower" data-parent="#accordion">
+                                <div class="card-body bg-white">
+                                    <p class= "d-none d-block">Gardenia</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div role="tab" class="card-header bg-success">
+                            <h5>
+                                <a class="collapsed" data-toggle="collapse" data-target="#skateboarding" role="button">
+                                    Which sport did Mark participate in as a teenager?
+                                </a>
+                            </h5>
+                            <div class="collapse" id="skateboarding" data-parent="#accordion" role="button">
+                                <div class="card-body bg-white">
+                                    <p class= "d-none d-block">Skateboarding</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
@@ -77,13 +144,14 @@
                     <li class="nav-item"><a class="nav-link active" href="#"><i class="fas fa-people-arrows"></i> About</a></li>
                     <li class="nav-item"><a class="nav-link" href="locations.html"><i class="fas fa-map-marker-alt"></i> Locations</a></li>
                     <li class="nav-item"><a class="nav-link" href="dinner-menu.html"><i class="fas fa-hamburger"></i> Dinner</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-gift"></i> Gift Registry</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gifts.html"><i class="fas fa-gift"></i> Gift Registry</a></li>
                 </ul>
             </div>
-            <span class="align-text-bottom" id="modalTogglerText" data-toggle="modal" href="#foo" data-target="#rsvpModal">RSVP/Contact   <a class="nav-item fas fa-envelope-open-text" id="modalToggler" data-toggle="modal" href="#foo" data-target="#rsvpModal">
-            </a></span>
-        </nav>
-    </div>
+            <span class="align-text-bottom" id="modalTogglerText" data-toggle="modal" role="button" data-target="#rsvpModal">RSVP/Contact   <i class="nav-item fas fa-envelope-open-text" id="modalToggler" data-toggle="modal" data-target="#rsvpModal">
+            </i></span>
+        </div>
+    </nav>
+
 
     <div id="rsvpModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-md" role="document">
@@ -95,36 +163,36 @@
                 <div class="modal-body">
                     <div class="container-fluid">
                         <div class="form-group row">
-                                <label class="col-md-5 col-form-label" id="modalText">Will you be joining us?</label>
+                                <label class="col-md-5 col-form-label modal-text">Will you be joining us?</label>
                                 <div class="col-md-1 form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioButton1" value="yes">
-                                    <label class="form-check-label" for="radioButton1" id="modalText">Yes</label>
+                                    <label class="form-check-label" for="radioButton1">Yes</label>
                                 </div>
                                 <div class="col-md-1 form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioButton2" value="no">
-                                    <label class="form-check-label" for="radioButton2" id="modalText">No</label>
+                                    <label class="form-check-label" for="radioButton2">No</label>
                                 </div>
                             </div>
                         </div>
                         <form>
                             <div class="form-group row">
-                                <i class="col-md-2 col-form-label fas fa-id-card" id="modalIcon"></i>
+                                <i class="col-md-2 col-form-label fas fa-id-card"></i>
                                 <div class="col-md-10">
-                                    <input type="text" class="form-control" id="modalText" name="firstName" placeholder="First Name" />
+                                    <input type="text" class="form-control modal-text" name="firstName" placeholder="First Name" />
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <i class="col-md-2 col-form-label fas fa-id-card" id="modalIcon"></i>
+                                <i class="col-md-2 col-form-label fas fa-id-card"></i>
                                 <div class="col-md-10">
-                                    <input type="text" class="form-control" id="modalText" name="lastName" placeholder="Last Name" />
+                                    <input type="text" class="form-control modal-text" name="lastName" placeholder="Last Name" />
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <div class="col-md-2 col-form-label">
-                                    <i class="fas fa-user-friends" id="modalIcon"></i>
+                                    <i class="fas fa-user-friends"></i>
                                 </div>
                                 <div class="col-md-10">
-                                    <select name="numOfGuests" id="modalText" class="form-control form-group">
+                                    <select name="numOfGuests modal-text" class="form-control form-group">
                                         <option value="select">Number of Guests in Your Party</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -136,44 +204,43 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <i class="col-md-2 col-form-label fas fa-phone-square-alt" id="modalIcon"></i>
+                                <i class="col-md-2 col-form-label fas fa-phone-square-alt"></i>
                                 <div class="col-md-10">
-                                    <input type="tel" class="form-control" id="modalText" name="telNumber" placeholder="Tel. number" />
+                                    <input type="tel" class="form-control modal-text" name="telNumber" placeholder="Tel. number" />
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <i class="col-md-2 col-form-label fas fa-envelope-square" id="modalIcon"></i>
+                                <i class="col-md-2 col-form-label fas fa-envelope-square"></i>
                                 <div class="col-md-10">
-                                    <input type="email" class="form-control" id="modalText" name="email" placeholder="Email Address" />
+                                    <input type="email" class="form-control modal-text" name="email" placeholder="Email Address" />
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <i class="col-md-2 col-form-label fas fa-comment-dots" id="modalIcon"></i>
+                                <i class="col-md-2 col-form-label fas fa-comment-dots"></i>
                                 <div class="col-md-10">
-                                    <textarea type="comments" class="form-control" id="modalText" name="comments" placeholder="Comments"></textarea>
+                                    <textarea class="form-control modal-text" name="comments" placeholder="Comments"></textarea>
                                 </div>
                             </div>
                             <div class="boxItem">
                             <div class="row form-group">
                                 <div class = "col text-center">
-                                    <button class="btn btn-success" data-dismiss="modal" id="modalButton">Submit RSVP</button>
-                                    <button class="btn btn-secondary" data-dismiss="modal" id="modalButton">Cancel</button>
+                                    <button class="btn btn-success modal-button" data-dismiss="modal">Submit RSVP</button>
+                                    <button class="btn btn-secondary modal-button" data-dismiss="modal">Cancel</button>
                                 </div>
                             </div>
 
                             <div class="form-group row">
                                 <div class="col text-center">
-                                    <a class="btn btn-link text-black" id="modalText" href="mailto:justineymark@gmail.com">justineymark@gmail.com  <i class="fas fa-envelope fa-2x"></i></a>
+                                    <a class="btn btn-link text-black modal-text" href="mailto:justineymark@gmail.com">justineymark@gmail.com  <i class="fas fa-envelope fa-2x"></i></a>
                                 </div>
                             </div>
                                 <div class="form-group row">
                                     <div class="col text-center">
-                                        <a class="btn btn-social-icon btn-instagram" id="modalIcon" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-                                    </div>
+                                        <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
                                 </div>
                             </div>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
