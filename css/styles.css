@@ -176,14 +176,17 @@ a, a:hover {
   text-decoration: none; 
 }
 
-/* === Dinner Menu Style === */
+/* === Dinner Menu Page === */
 
-.dinner-menu li {
-  list-style: none;
-  text-align: center;
+#dinnerCarousel {
+  margin-bottom: 30px;
 }
 
 .dinner-menu h3 [
   margin: 0;
   padding: 0;
 ]
+.dinner-menu li {
+  list-style: none;
+  text-align: left;
+}
