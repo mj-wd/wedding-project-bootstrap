@@ -180,11 +180,10 @@ a, a:hover {
   text-decoration: none; 
 }
 
-/* === Dinner Menu Page === */
+/* ===== Dinner Menu Page ===== */
 
-.dinner-menu li {
-  list-style: none;
-  text-align: center;
+#homeCarousel {
+  margin-bottom: 30px;
 }
 /* .carousel-caption {
   background-color: rgba(0, 0, 0, 0.5); } */
@@ -200,4 +199,9 @@ a, a:hover {
 .dinner-menu li {
   list-style: none;
   text-align: left;
+}
+
+/* ===== Gift Registry Page ===== */
+.gifts {
+  max-height: 150px;
 }
