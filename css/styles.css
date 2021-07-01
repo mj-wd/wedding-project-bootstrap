@@ -188,16 +188,18 @@ a, a:hover {
   color: #eae7c4; }
 
 .dinner-menu h3 {
-  margin: 0;
+  margin: -7px 0 0 0;
   padding: 0;
 }
 
-.dinner-menu li {
-  list-style: none;
-  text-align: left;
+.dinner-menu ul, .dinner-menu li {
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0 0 15px 0;
 }
 
 /* ===== Gift Registry Page ===== */
 .gifts {
-  max-height: 150px;
+  max-width: 100%;
 }
