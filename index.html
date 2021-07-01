@@ -26,27 +26,28 @@
     <!-- Hero stolen from: https://csshint.com/bootstrap-hero-image-examples/
     FEEL FREE TO CHANGE THE APPEARANCE OF THE HERO, DIS JUS FO REFERENCE. BUTT PLEASE FIX TEXT MARGINS AND SM SCREEN SIZE VIEW. IT'S UGLY AF :(-->
     <div class="hero-container">
-        <div class="hero">            
-            <div class="dropdown">
-                <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Language
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="list-unstyled ct-language__dropdown">
-                <ul>
-                    <li><a class="lang-en lang-select" href="#googtrans(en|en)" data-lang="en" alt="English"><img src="img/flag-usa-icon.png" > English</a></li>
-                    <br>
-                    <li><a class="lang-es lang-select" href="#googtrans(en|es)" data-lang="es" alt="Español"><img src="img/flag-mexico-icon.png"> Español</a></li>
-                    <br>
-                    <li><a class="lang-en lang-select" href="#googtrans(en|fr)"  data-lang="en" alt="Français"><img src="img/flag-france-icon.png"> Français</a></li>
-                </ul>
-              </div>
-            </div>        
+        <div class="hero">
             <div class="hero-text">
             <h1>I love Zachary.</h1>
             </div>
         </div>
     </div>
+
+    <div class="dropdown">
+        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Language
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="list-unstyled ct-language__dropdown">
+        <ul>
+            <li><a class="lang-en lang-select" href="#googtrans(en|en)" data-lang="en" alt="English"><img src="img/flag-usa-icon.png" > English</a></li>
+            <br>
+            <li><a class="lang-es lang-select" href="#googtrans(en|es)" data-lang="es" alt="Español"><img src="img/flag-mexico-icon.png"> Español</a></li>
+            <br>
+            <li><a class="lang-en lang-select" href="#googtrans(en|fr)"  data-lang="en" alt="Français"><img src="img/flag-france-icon.png"> Français</a></li>
+        </ul>
+      </div>
+    </div>  
 
     <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
 
@@ -163,9 +164,6 @@
         </div>
     </div>
 
-
-
-
     <!-- jQuery must come first, then Popper.js (for pop-ups, tooltips, & most dropdown menus, then the Bootstrap JavaScript plugins.-->
     <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
@@ -174,21 +172,32 @@
     <script src="js/scripts.js"></script>
     <!-- endbuild -->
 
-    <div class="dropdown">
-        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Language
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="list-unstyled ct-language__dropdown">
-        <ul>
-            <li><a class="lang-en lang-select" href="#googtrans(en|en)" data-lang="en" alt="English"><img src="img/flag-usa-icon.png" > English</a></li>
-            <br>
-            <li><a class="lang-es lang-select" href="#googtrans(en|es)" data-lang="es" alt="Español"><img src="img/flag-mexico-icon.png"> Español</a></li>
-            <br>
-            <li><a class="lang-en lang-select" href="#googtrans(en|fr)"  data-lang="en" alt="Français"><img src="img/flag-france-icon.png"> Français</a></li>
-        </ul>
-        </div>
-    </div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
+        }
+
+        function triggerHtmlEvent(element, eventName) {
+        var event;
+        if (document.createEvent) {
+            event = document.createEvent('HTMLEvents');
+            event.initEvent(eventName, true, true);
+            element.dispatchEvent(event);
+        } else {
+            event = document.createEventObject();
+            event.eventType = eventName;
+            element.fireEvent('on' + event.eventType, event);
+        }
+        }
+
+        jQuery('.lang-select').click(function() {
+        var theLang = jQuery(this).attr('data-lang');
+        jQuery('.goog-te-combo').val(theLang);
+
+        window.location = jQuery(this).attr('href');
+        location.reload();
+        });
+    </script>
 
 </body>
 
