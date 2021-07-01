@@ -176,9 +176,9 @@ a, a:hover {
 .dinner-menu li {
   list-style: none;
   text-align: center;
-  padding: 5px;
 }
 
-.dinner-menu h3 {
-  align-items: top;
-}
+.dinner-menu h3 [
+  margin: 0;
+  padding: 0;
+]
