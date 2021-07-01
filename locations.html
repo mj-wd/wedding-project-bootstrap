@@ -32,7 +32,7 @@
                 </p>
             </div>
             <div class="col-lg-6">
-                <a href="https://en.wikipedia.org/wiki/Mexico_City_Metropolitan_Cathedral" target="blank"><img src="img/catedral.jpg" id ="locationsImg" alt="Image of the Wedding Catedral" class="img-fluid" /></a>
+                <a href="https://en.wikipedia.org/wiki/Mexico_City_Metropolitan_Cathedral" target="blank"><img src="img/catedral.jpg" id ="catedral" alt="Image of the Wedding Catedral" class="img-fluid" /></a>
                 <iframe width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen
                 src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ4a8nxjL50YURJ19RJ_A9T5E&key=AIzaSyCtnrTSfDx4i-eTATJzkgMZFwZL4PBhyuI"></iframe>
             </div>
@@ -48,7 +48,7 @@
                 </p>
             </div>
             <div class="col-lg-6">
-                <a href="https://granhoteldelaciudaddemexico.com.mx/en/" target="blank"><img src="img/hotel.jpg" id ="locationsImg" alt="Image of the Reception Venue" class="img-fluid" /></a>
+                <a href="https://granhoteldelaciudaddemexico.com.mx/en/" target="blank"><img src="img/hotel.jpg" id ="hotel" alt="Image of the Reception Venue" class="img-fluid" /></a>
                 <iframe width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJQRMdGVcBzoURTPsEkZCr5tY&key=AIzaSyCtnrTSfDx4i-eTATJzkgMZFwZL4PBhyuI"></iframe> 
             </div>
         </div>
@@ -73,11 +73,11 @@
                     <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fas fa-people-arrows"></i> About</a></li>
                     <li class="nav-item"><a class="nav-link active" href="#"><i class="fas fa-map-marker-alt"></i> Locations</a></li>
                     <li class="nav-item"><a class="nav-link" href="dinner-menu.html"><i class="fas fa-hamburger"></i> Dinner </a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-gift"></i> Gift Registry</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gifts.html"><i class="fas fa-gift"></i> Gift Registry</a></li>
                 </ul>
             </div>
-            <span class="align-text-bottom" id="modalTogglerText" data-toggle="modal" href="#foo" data-target="#rsvpModal">RSVP/Contact   <a class="nav-item fas fa-envelope-open-text" id="modalToggler" data-toggle="modal" href="#foo" data-target="#rsvpModal">
-            </a></span>
+            <span class="align-text-bottom" id="modalTogglerText" data-toggle="modal" role="button" data-target="#rsvpModal">RSVP/Contact   <i class="nav-item fas fa-envelope-open-text" id="modalToggler" data-toggle="modal" data-target="#rsvpModal">
+            </i></span>
         </div>
     </nav>
 
@@ -91,36 +91,36 @@
                 <div class="modal-body">
                     <div class="container-fluid">
                         <div class="form-group row">
-                                <label class="col-md-5 col-form-label" id="modalText">Will you be joining us?</label>
+                                <label class="col-md-5 col-form-label modal-text">Will you be joining us?</label>
                                 <div class="col-md-1 form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioButton1" value="yes">
-                                    <label class="form-check-label" for="radioButton1" id="modalText">Yes</label>
+                                    <label class="form-check-label" for="radioButton1">Yes</label>
                                 </div>
                                 <div class="col-md-1 form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioButton2" value="no">
-                                    <label class="form-check-label" for="radioButton2" id="modalText">No</label>
+                                    <label class="form-check-label" for="radioButton2">No</label>
                                 </div>
                             </div>
                         </div>
                         <form>
                             <div class="form-group row">
-                                <i class="col-md-2 col-form-label fas fa-id-card" id="modalIcon"></i>
+                                <i class="col-md-2 col-form-label fas fa-id-card"></i>
                                 <div class="col-md-10">
-                                    <input type="text" class="form-control" id="modalText" name="firstName" placeholder="First Name" />
+                                    <input type="text" class="form-control modal-text" name="firstName" placeholder="First Name" />
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <i class="col-md-2 col-form-label fas fa-id-card" id="modalIcon"></i>
+                                <i class="col-md-2 col-form-label fas fa-id-card"></i>
                                 <div class="col-md-10">
-                                    <input type="text" class="form-control" id="modalText" name="lastName" placeholder="Last Name" />
+                                    <input type="text" class="form-control modal-text" name="lastName" placeholder="Last Name" />
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <div class="col-md-2 col-form-label">
-                                    <i class="fas fa-user-friends" id="modalIcon"></i>
+                                    <i class="fas fa-user-friends"></i>
                                 </div>
                                 <div class="col-md-10">
-                                    <select name="numOfGuests" id="modalText" class="form-control form-group">
+                                    <select name="numOfGuests modal-text" class="form-control form-group">
                                         <option value="select">Number of Guests in Your Party</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -132,44 +132,43 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <i class="col-md-2 col-form-label fas fa-phone-square-alt" id="modalIcon"></i>
+                                <i class="col-md-2 col-form-label fas fa-phone-square-alt"></i>
                                 <div class="col-md-10">
-                                    <input type="tel" class="form-control" id="modalText" name="telNumber" placeholder="Tel. number" />
+                                    <input type="tel" class="form-control modal-text" name="telNumber" placeholder="Tel. number" />
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <i class="col-md-2 col-form-label fas fa-envelope-square" id="modalIcon"></i>
+                                <i class="col-md-2 col-form-label fas fa-envelope-square"></i>
                                 <div class="col-md-10">
-                                    <input type="email" class="form-control" id="modalText" name="email" placeholder="Email Address" />
+                                    <input type="email" class="form-control modal-text" name="email" placeholder="Email Address" />
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <i class="col-md-2 col-form-label fas fa-comment-dots" id="modalIcon"></i>
+                                <i class="col-md-2 col-form-label fas fa-comment-dots"></i>
                                 <div class="col-md-10">
-                                    <textarea type="comments" class="form-control" id="modalText" name="comments" placeholder="Comments"></textarea>
+                                    <textarea class="form-control modal-text" name="comments" placeholder="Comments"></textarea>
                                 </div>
                             </div>
                             <div class="boxItem">
                             <div class="row form-group">
                                 <div class = "col text-center">
-                                    <button class="btn btn-success" data-dismiss="modal" id="modalButton">Submit RSVP</button>
-                                    <button class="btn btn-secondary" data-dismiss="modal" id="modalButton">Cancel</button>
+                                    <button class="btn btn-success modal-button" data-dismiss="modal">Submit RSVP</button>
+                                    <button class="btn btn-secondary modal-button" data-dismiss="modal">Cancel</button>
                                 </div>
                             </div>
 
                             <div class="form-group row">
                                 <div class="col text-center">
-                                    <a class="btn btn-link text-black" id="modalText" href="mailto:justineymark@gmail.com">justineymark@gmail.com  <i class="fas fa-envelope fa-2x"></i></a>
+                                    <a class="btn btn-link text-black modal-text" href="mailto:justineymark@gmail.com">justineymark@gmail.com  <i class="fas fa-envelope fa-2x"></i></a>
                                 </div>
                             </div>
                                 <div class="form-group row">
                                     <div class="col text-center">
-                                        <a class="btn btn-social-icon btn-instagram" id="modalIcon" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-                                    </div>
+                                        <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
                                 </div>
                             </div>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
