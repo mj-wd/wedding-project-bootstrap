@@ -178,9 +178,20 @@ a, a:hover {
 
 /* === Dinner Menu Page === */
 
-#dinnerCarousel {
+<<<<<<< HEAD
+#homeCarousel {
   margin-bottom: 30px;
+=======
+.dinner-menu li {
+  list-style: none;
+  text-align: center;
+>>>>>>> parent of e58b095 (Dinner menu content)
 }
+/* .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); } */
+
+#carouselText {
+  color: #eae7c4; }
 
 .dinner-menu h3 [
   margin: 0;
