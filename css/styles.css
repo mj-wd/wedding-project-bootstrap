@@ -26,6 +26,10 @@ body, html{
   background-color: #f6f8e3;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .hero-container {
   height: 100vh;
   overflow: hidden;
