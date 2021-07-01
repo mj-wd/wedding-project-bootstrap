@@ -1,7 +1,7 @@
 {
-  "name": "nucampsite",
+  "name": "wedding_project",
   "version": "1.0.0",
-  "description": "This is a website for the fictional campsites review site NuCamp.",
+  "description": "This is a wedding website project.",
   "main": "index.html",
   "scripts": {
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
@@ -16,7 +16,7 @@
     "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
     "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
   },
-  "author": "Mark Jeffery",
+  "author": "Mark Jeffery, Zachary Fisher, Fredo Alvarez",
   "license": "ISC",
   "devDependencies": {
     "copyfiles": "^2.2.0",
