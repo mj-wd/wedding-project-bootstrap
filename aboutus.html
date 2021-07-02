@@ -265,7 +265,7 @@
         }
 
         function triggerHtmlEvent(element, eventName) {
-        var event;
+        let event;
         if (document.createEvent) {
             event = document.createEvent('HTMLEvents');
             event.initEvent(eventName, true, true);
@@ -278,7 +278,7 @@
         }
 
         jQuery('.lang-select').click(function() {
-        var theLang = jQuery(this).attr('data-lang');
+        let theLang = jQuery(this).attr('data-lang');
         jQuery('.goog-te-combo').val(theLang);
 
         window.location = jQuery(this).attr('href');
