@@ -55,16 +55,8 @@ li:not(:last-child) {
   left: 40px;
 }
 
-h1, h2 {
+h1, h2, h3, h4, h5 {
   font-family: "Charmonman", "Open Sans", sans-serif, cursive;
-  color: black;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
-h3, h4, h5 {
-  font-family: "Open Sans", sans-serif;
-  font-size: auto;
   color: black;
   margin-top: 30px;
   margin-bottom: 10px;
