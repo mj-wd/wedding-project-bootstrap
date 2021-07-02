@@ -182,7 +182,7 @@ a, a:hover {
 
 /* ===== Dinner Menu Page ===== */
 
-#homeCarousel {
+#dinnerCarousel {
   margin-bottom: 30px;
 }
 .dinner-menu li {
@@ -195,9 +195,16 @@ a, a:hover {
 #carouselText {
   color: #eae7c4; }
 
-.dinner-menu h3 {
+.carousel-caption {
+  /* background-color: rgba(204, 204, 185, 0.75); */
+}
+
+#dinnerCarousel h3 {
   margin: 0;
   padding: 0;
+  font-family: "Charmonman", "Open Sans", sans-serif, cursive;
+  text-shadow: 0px 0px 1px navy;
+  color: rgb(85%, 85%, 85%);
 }
 .dinner-menu li {
   list-style: none;
