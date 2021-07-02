@@ -185,6 +185,10 @@ a, a:hover {
 #homeCarousel {
   margin-bottom: 30px;
 }
+.dinner-menu li {
+  list-style: none;
+  text-align: center;
+}
 /* .carousel-caption {
   background-color: rgba(0, 0, 0, 0.5); } */
 
@@ -192,18 +196,17 @@ a, a:hover {
   color: #eae7c4; }
 
 .dinner-menu h3 {
-  margin: -7px 0 0 0;
+  margin: 0;
   padding: 0;
 }
-
-.dinner-menu ul, .dinner-menu li {
-  list-style-type: none;
-  list-style-position: inside;
-  margin: 0;
-  padding: 0 0 15px 0;
+.dinner-menu li {
+  list-style: none;
+  text-align: left;
 }
 
-/* ===== Gift Registry Page ===== */
+/* === Gift Registry Page === */
+
 .gifts {
   max-width: 100%;
+  max-height: 150px;
 }
