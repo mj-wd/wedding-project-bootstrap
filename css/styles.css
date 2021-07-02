@@ -26,6 +26,10 @@ body, html{
   background-color: #f6f8e3;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .hero-container {
   height: 100vh;
   overflow: hidden;
@@ -98,7 +102,7 @@ p, a {
   transition: transform 0.5s;
 }
 
-#locationsImg:hover, #teotihuacan-shoes:hover, #jar-her-Img:hover, #jar-him-Img:hover {
+#catedral:hover, #hotel:hover, #teotihuacan-shoes:hover, #jar-her-Img:hover, #jar-him-Img:hover {
   transform: scale(1.2);
 }
 
@@ -176,16 +180,10 @@ a, a:hover {
   text-decoration: none; 
 }
 
-/* === Dinner Menu Page === */
+/* ===== Dinner Menu Page ===== */
 
-<<<<<<< HEAD
 #homeCarousel {
   margin-bottom: 30px;
-=======
-.dinner-menu li {
-  list-style: none;
-  text-align: center;
->>>>>>> parent of e58b095 (Dinner menu content)
 }
 /* .carousel-caption {
   background-color: rgba(0, 0, 0, 0.5); } */
@@ -193,11 +191,19 @@ a, a:hover {
 #carouselText {
   color: #eae7c4; }
 
-.dinner-menu h3 [
-  margin: 0;
+.dinner-menu h3 {
+  margin: -7px 0 0 0;
   padding: 0;
-]
-.dinner-menu li {
-  list-style: none;
-  text-align: left;
+}
+
+.dinner-menu ul, .dinner-menu li {
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0 0 15px 0;
+}
+
+/* ===== Gift Registry Page ===== */
+.gifts {
+  max-width: 100%;
 }

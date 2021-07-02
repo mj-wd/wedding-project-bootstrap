@@ -13,21 +13,39 @@
     <link rel="stylesheet" href="css/styles.css" />
     <!-- endbuild -->
     <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+
+
+      
     <title>Justine & Mark's Wedding</title>
 
 </head>
 
-
-
 <body>
+
+    <div class="dropdown">
+        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Language
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="list-unstyled ct-language__dropdown">
+        <ul>
+            <li><a class="lang-en lang-select" href="#googtrans(en|en)" data-lang="en" alt="English"><img src="img/flag-usa-icon.png" > English</a></li>
+            <br>
+            <li><a class="lang-es lang-select" href="#googtrans(en|es)" data-lang="es" alt="Español"><img src="img/flag-mexico-icon.png"> Español</a></li>
+            <br>
+            <li><a class="lang-en lang-select" href="#googtrans(en|fr)"  data-lang="en" alt="Français"><img src="img/flag-france-icon.png"> Français</a></li>
+        </ul>
+      </div>
+    </div>
 
     <div class="container">
         <div class="row row-content align-items-top">
             <div class="col-md-6">                
                 <a href="https://en.wikipedia.org/wiki/Tlayacapan" target="blank"><img src="img/magic-town-her.jpg" class="float" id ="magic-town-her" alt="Justine in Tlayacapan"/></a>
                 <h1>About Justine</h1>
-                <p>Justine was born in Satelite, in the State of Mexico and currently lives in Ciudad López Mateos which is in the same state. Her occupation is a schoolteacher. Due to the pandemic, she has missed being in the classroom with her students and contributing to their growth. She is highly knowledgeable about Mexican culture, geography, history, and cuisine. She is polite, yet fierce and is the organizer of the relationship. She speaks and writes fluent English and Spanish.
+                <p>Justine was born in Satelite, in the State of Mexico and currently lives in Ciudad López Mateos which is in the same state. Her occupation is a schoolteacher. Due to the pandemic, she has missed being in the classroom with her students and contributing to their growth. She is highly knowledgeable about Mexican culture, geography, history, and cuisine. She is the organizer and planner of the relationship. She speaks and writes fluent English and Spanish.
                 </p>
             </div>
             <div class="col-md-6">
@@ -43,7 +61,7 @@
         <div class="row row-content align-items-center">
             <div class="col">
                 <h1>Justine & Mark</h1>
-                <p>They met in January 2019 and became a couple on June 1, 2019. Although they live far apart, the relationship has blossomed and they travel to each others' home cities whenever they have time off from work. Together they enjoy cooking, watching movies, traveling, and museums. They have traveled to over a dozen cities and places in Mexico and the USA in the short time they have been together.
+                <p>Justine and Mark met in January 2019 and became a couple on June 1, 2019. Although they live far apart, the relationship has blossomed. They frequently stay in others' home cities whenever they have time off from work. Together they enjoy cooking, watching movies, traveling, and museums. They have visited over a dozen cities together in Mexico and in the United States, and look forward to many more years of traveling and adventures!
                 </p>
             </div>
         </div>
@@ -125,14 +143,6 @@
         </div>
     </div>
 
-    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-    <!-- build:js js/main.js -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <!-- endbuild -->
-
     <nav class="navbar navbar-expand-md navbar-light fixed-bottom">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
@@ -193,13 +203,14 @@
                                 </div>
                                 <div class="col-md-10">
                                     <select name="numOfGuests modal-text" class="form-control form-group">
-                                        <option value="select">Number of Guests in Your Party</option>
+                                        <option value="select">Number of Guests (Include Yourself)</option>
+                                        <option value="0">0 (Select if Unable to Attend)</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
                                         <option value="4">4</option>
                                         <option value="5">5</option>
-                                        <option value="6">6</option>
+                                        <option value="6">6 (Maximum Party Size)</option>
                                     </select>
                                 </div>
                             </div>
@@ -247,5 +258,40 @@
     </div>
 
 </body>
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
+        }
+    
+        function triggerHtmlEvent(element, eventName) {
+          var event;
+          if (document.createEvent) {
+            event = document.createEvent('HTMLEvents');
+            event.initEvent(eventName, true, true);
+            element.dispatchEvent(event);
+          } else {
+            event = document.createEventObject();
+            event.eventType = eventName;
+            element.fireEvent('on' + event.eventType, event);
+          }
+        }
+    
+        jQuery('.lang-select').click(function() {
+          var theLang = jQuery(this).attr('data-lang');
+          jQuery('.goog-te-combo').val(theLang);
+    
+          window.location = jQuery(this).attr('href');
+          location.reload();
+        });
+    </script>
 
 </html>
