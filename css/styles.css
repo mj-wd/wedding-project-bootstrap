@@ -36,30 +36,62 @@ li:not(:last-child) {
   margin-bottom: 8px;
 }
 
-.hero-container {
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-}
-
-.hero {
-  background: url(/img/kiss.jpg);
-  background-size: cover;
-  height: 100vw;
-  width: 100vw;
-}
-
-.hero-text {
-  position: absolute;
-  top: 40px;
-  left: 40px;
-}
-
 h1, h2, h3, h4, h5 {
   font-family: "Charmonman", "Open Sans", sans-serif, cursive;
   color: black;
   margin-top: 30px;
   margin-bottom: 10px;
+}
+#hero-caro{
+  top:300px;
+  bottom:auto;
+}
+#hero-h1 {
+  margin:0;
+  color:#28a745;
+}
+#hero-h2 {
+  margin:0;
+  color:#28a745;
+
+}
+@media (max-width: 767px) {
+  #hero-h1 {
+    font-size:6vw;
+  }
+  #hero-caro {
+    top:300px;
+    bottom:auto;
+  }
+  #hero-h2 {
+    font-size: 4vw;
+  }
+}
+
+@media (min-width: 768px) {
+  #hero-h1 {
+    font-size:6vw;
+  }
+  #hero-caro {
+    top:350px;
+    bottom:auto;
+  }
+  #hero-h2 {
+    font-size: 4vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  #hero-h1 {
+    font-size:8vw;
+  }
+  #hero-caro {
+    top:400px;
+    bottom:auto;
+  }
+  #hero-h2 {
+    font-size: 6vw;
+  }
 }
 
 p, a {
