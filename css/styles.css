@@ -26,6 +26,10 @@ body, html{
   background-color: #f6f8e3;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .hero-container {
   height: 100vh;
   overflow: hidden;
@@ -98,7 +102,7 @@ p, a {
   transition: transform 0.5s;
 }
 
-#locationsImg:hover, #teotihuacan-shoes:hover, #jar-her-Img:hover, #jar-him-Img:hover {
+#catedral:hover, #hotel:hover, #teotihuacan-shoes:hover, #jar-her-Img:hover, #jar-him-Img:hover {
   transform: scale(1.2);
 }
 
@@ -176,7 +180,7 @@ a, a:hover {
   text-decoration: none; 
 }
 
-/* === Dinner Menu Page === */
+/* ===== Dinner Menu Page ===== */
 
 #homeCarousel {
   margin-bottom: 30px;
