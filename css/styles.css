@@ -206,7 +206,17 @@ a, a:hover {
 
 /* === Gift Registry Page === */
 
-.gifts {
-  max-width: 100%;
-  max-height: 150px;
+.gift {
+  padding: 3px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+.purchased {
+  color: #ccc;
+}
+
+.purchased img {
+  filter: blur(3px);
+  border: 1px solid #f00;
 }
