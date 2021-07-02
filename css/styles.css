@@ -26,8 +26,14 @@ body, html{
   background-color: #f6f8e3;
 }
 
-ul {
+ul, .dropdown-translator, .dropdown-menu {
   list-style-type: none;
+  background-color: transparent;
+  border: none;
+}
+
+li:not(:last-child) {
+  margin-bottom: 8px;
 }
 
 .hero-container {

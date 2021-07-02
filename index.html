@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <!-- endbuild -->
     <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <title>Justine & Mark's Wedding</title>
 
@@ -38,16 +38,18 @@
             Language
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="list-unstyled ct-language__dropdown">
-        <ul>
-            <li><a class="lang-en lang-select" href="#googtrans(en|en)" data-lang="en" alt="English"><img src="img/flag-usa-icon.png" > English</a></li>
-            <br>
-            <li><a class="lang-es lang-select" href="#googtrans(en|es)" data-lang="es" alt="Español"><img src="img/flag-mexico-icon.png"> Español</a></li>
-            <br>
-            <li><a class="lang-en lang-select" href="#googtrans(en|fr)"  data-lang="en" alt="Français"><img src="img/flag-france-icon.png"> Français</a></li>
-        </ul>
-      </div>
-    </div>  
+            <div class="list-unstyled ct-language__dropdown">
+                <ul>
+                    <!-- Note that Nu Html Checker will return errors. However, the below code is plug-and-play from Google. -->
+                    <!-- Note that Google Maps displays in native language by default and will not be translated in English speaking countries.-->
+                    <li><a role="button" class="lang-es lang-select" href="#googtrans(en|es)" data-lang="en"><img src="img/flag-mexico-icon.png" alt="Español"></a></li>
+                    <li><a role="button" class="lang-fr lang-select" href="#googtrans(en|fr)" data-lang="en"><img src="img/flag-france-icon.png" alt="Français"></a></li>
+                    <li><a role="button" class="lang-de lang-select" href="#googtrans(en|de)" data-lang="en"><img src="img/flag-germany-icon.png" alt="Deutsch"></a></li>
+                    <li><a role="button" class="lang-en lang-select" href="#googtrans(en|en)" data-lang="en"><img src="img/flag-usa-icon.png" alt="English"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
 
@@ -172,7 +174,7 @@
     <script src="js/scripts.js"></script>
     <!-- endbuild -->
 
-    <script type="text/javascript">
+    <script>
         function googleTranslateElementInit() {
         new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
         }

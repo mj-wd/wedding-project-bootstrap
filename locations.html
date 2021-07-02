@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <!-- endbuild -->
     <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <title>Justine & Mark's Wedding</title>
 
@@ -26,18 +26,18 @@
             Language
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="list-unstyled ct-language__dropdown">
-        <ul>
-            <li><a class="lang-en lang-select" href="#googtrans(en|en)" data-lang="en" alt="English"><img src="img/flag-usa-icon.png" > English</a></li>
-            <br>
-            <li><a class="lang-es lang-select" href="#googtrans(en|es)" data-lang="es" alt="Español"><img src="img/flag-mexico-icon.png"> Español</a></li>
-            <br>
-            <li><a class="lang-en lang-select" href="#googtrans(en|fr)"  data-lang="en" alt="Français"><img src="img/flag-france-icon.png"> Français</a></li>
-        </ul>
-      </div>
+            <div class="list-unstyled ct-language__dropdown">
+                <ul>
+                    <!-- Note that Nu Html Checker will return errors. However, the below code is plug-and-play from Google. -->
+                    <!-- Note that Google Maps displays in native language by default and will not be translated in English speaking countries.-->
+                    <li><a role="button" class="lang-es lang-select" href="#googtrans(en|es)" data-lang="en"><img src="img/flag-mexico-icon.png" alt="Español"></a></li>
+                    <li><a role="button" class="lang-fr lang-select" href="#googtrans(en|fr)" data-lang="en"><img src="img/flag-france-icon.png" alt="Français"></a></li>
+                    <li><a role="button" class="lang-de lang-select" href="#googtrans(en|de)" data-lang="en"><img src="img/flag-germany-icon.png" alt="Deutsch"></a></li>
+                    <li><a role="button" class="lang-en lang-select" href="#googtrans(en|en)" data-lang="en"><img src="img/flag-usa-icon.png" alt="English"></a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-
-    <!-- Note that Google Maps displays in natvie language and will not be translated -->
 
     <div class="container">
         <div class="row row-content align-items-center">
@@ -52,7 +52,7 @@
             </div>
             <div class="col-lg-6">
                 <a href="https://en.wikipedia.org/wiki/Mexico_City_Metropolitan_Cathedral" target="blank"><img src="img/catedral.jpg" id ="catedral" alt="Image of the Wedding Catedral" class="img-fluid" /></a>
-                <iframe width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen
+                <iframe style="width:100%; height:100%; border:0" loading="lazy" allowfullscreen
                 src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ4a8nxjL50YURJ19RJ_A9T5E&key=AIzaSyCtnrTSfDx4i-eTATJzkgMZFwZL4PBhyuI"></iframe>
             </div>
         </div>
@@ -68,7 +68,7 @@
             </div>
             <div class="col-lg-6">
                 <a href="https://granhoteldelaciudaddemexico.com.mx/en/" target="blank"><img src="img/hotel.jpg" id ="hotel" alt="Image of the Reception Venue" class="img-fluid" /></a>
-                <iframe width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJQRMdGVcBzoURTPsEkZCr5tY&key=AIzaSyCtnrTSfDx4i-eTATJzkgMZFwZL4PBhyuI"></iframe> 
+                <iframe style="width:100%; height:100%; border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJQRMdGVcBzoURTPsEkZCr5tY&key=AIzaSyCtnrTSfDx4i-eTATJzkgMZFwZL4PBhyuI"></iframe> 
             </div>
         </div>
     </div>
@@ -186,8 +186,6 @@
         </div>
     </div>
 
-</body>
-
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
@@ -196,7 +194,7 @@
     <script src="js/scripts.js"></script>
     <!-- endbuild -->
 
-    <script type="text/javascript">
+    <script>
         function googleTranslateElementInit() {
         new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
         }
@@ -222,5 +220,7 @@
         location.reload();
         });
     </script>
+
+</body>
 
 </html>
