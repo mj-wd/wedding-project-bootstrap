@@ -23,30 +23,7 @@
 
 </head>
 
-<body class="body" id="index">
-
-    <div class="dropdown">
-        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Language
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <div class="list-unstyled ct-language__dropdown">
-                <ul> -->
-                    <!-- Note that Nu Html Checker will return errors. However, the below code is plug-and-play from Google. -->
-                    <!-- Note that Google Maps displays in native language by default and will not be translated in English speaking countries.-->
-                    <li><a role="button" class="lang-es lang-select" href="#googtrans(en|es)" data-lang="en"><img
-                                src="img/flag-mexico-icon.png" alt="Español"></a></li>
-                    <li><a role="button" class="lang-fr lang-select" href="#googtrans(en|fr)" data-lang="en"><img
-                                src="img/flag-france-icon.png" alt="Français"></a></li>
-                    <li><a role="button" class="lang-de lang-select" href="#googtrans(en|de)" data-lang="en"><img
-                                src="img/flag-germany-icon.png" alt="Deutsch"></a></li>
-                    <li><a role="button" class="lang-en lang-select" href="#googtrans(en|en)" data-lang="en"><img
-                                src="img/flag-usa-icon.png" alt="English"></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+<body class="index-body" id="index">
 
     <div class="hero-container">
         <div class="hero-center">
@@ -65,7 +42,7 @@
     </div>
 </div>
 
-    <nav class="navbar navbar-expand-md navbar-light sticky-top">
+    <nav class="navbar navbar-expand-md navbar-light sticky-bottom">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
                 <span class="navbar-toggler-icon"></span>
@@ -185,6 +162,24 @@
                         </div>
                     </form>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Language
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <div class="list-unstyled ct-language__dropdown">
+                <ul>
+                    <!-- Note that Nu Html Checker will return errors. However, the below code is plug-and-play from Google. -->
+                    <!-- Note that Google Maps displays in native language by default and will not be translated in English speaking countries.-->
+                    <li><a role="button" class="lang-es lang-select" href="#googtrans(en|es)" data-lang="en"><img src="img/flag-mexico-icon.png" alt="Español"></a></li>
+                    <li><a role="button" class="lang-fr lang-select" href="#googtrans(en|fr)" data-lang="en"><img src="img/flag-france-icon.png" alt="Français"></a></li>
+                    <li><a role="button" class="lang-de lang-select" href="#googtrans(en|de)" data-lang="en"><img src="img/flag-germany-icon.png" alt="Deutsch"></a></li>
+                    <li><a role="button" class="lang-en lang-select" href="#googtrans(en|en)" data-lang="en"><img src="img/flag-usa-icon.png" alt="English"></a></li>
+                </ul>
             </div>
         </div>
     </div>
