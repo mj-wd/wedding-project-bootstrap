@@ -15,8 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Charmonman:wght@400;700&display=swap" rel="stylesheet">    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Charmonman:wght@400;700&display=swap" rel="stylesheet">     <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
       
     <title>Justine & Mark's Wedding</title>
@@ -30,15 +29,17 @@
             Language
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="list-unstyled ct-language__dropdown">
-        <ul>
-            <li><a class="lang-en lang-select" href="#googtrans(en|en)" data-lang="en" alt="English"><img src="img/flag-usa-icon.png" > English</a></li>
-            <br>
-            <li><a class="lang-es lang-select" href="#googtrans(en|es)" data-lang="es" alt="Español"><img src="img/flag-mexico-icon.png"> Español</a></li>
-            <br>
-            <li><a class="lang-en lang-select" href="#googtrans(en|fr)"  data-lang="en" alt="Français"><img src="img/flag-france-icon.png"> Français</a></li>
-        </ul>
-      </div>
+            <div class="list-unstyled ct-language__dropdown">
+                <ul>
+                    <!-- Note that Nu Html Checker will return errors. However, the below code is plug-and-play from Google. -->
+                    <!-- Note that Google Maps displays in native language by default and will not be translated in English speaking countries.-->
+                    <li><a role="button" class="lang-es lang-select" href="#googtrans(en|es)" data-lang="en"><img src="img/flag-mexico-icon.png" alt="Español"></a></li>
+                    <li><a role="button" class="lang-fr lang-select" href="#googtrans(en|fr)" data-lang="en"><img src="img/flag-france-icon.png" alt="Français"></a></li>
+                    <li><a role="button" class="lang-de lang-select" href="#googtrans(en|de)" data-lang="en"><img src="img/flag-germany-icon.png" alt="Deutsch"></a></li>
+                    <li><a role="button" class="lang-en lang-select" href="#googtrans(en|en)" data-lang="en"><img src="img/flag-usa-icon.png" alt="English"></a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <div class="container">
@@ -61,7 +62,7 @@
     <div class="container">
         <div class="row row-content align-items-center">
             <div class="col">
-                <h1>Justine & Mark</h1>
+                <h1>About Justine & Mark</h1>
                 <p>Justine and Mark met in January 2019 and became a couple on June 1, 2019. Although they live far apart, the relationship has blossomed. They frequently stay in others' home cities whenever they have time off from work. Together they enjoy cooking, watching movies, traveling, and museums. They have visited over a dozen cities together in Mexico and in the United States, and look forward to many more years of traveling and adventures!
                 </p>
             </div>
@@ -81,15 +82,13 @@
         <div class="row row-content">
             <div class="col-sm-12" role="tablist">
                 <h1>How much do you know about them?</h1>
-                <h4>Click on each question below to find out.</h4>
+                <p>Click on each question below to find out.</p>
                 <div id="accordion">
                     <div class="card">
                         <div role="tab" class="card-header bg-success">
-                            <h5>
                                 <a data-toggle="collapse" data-target="#park" role="button">
                                     What is Justine's favorite National Park in the USA?
                                 </a>
-                            </h5>
                             <div class="collapse" id="park" data-parent="#accordion">
                                 <div class="card-body bg-white">
                                     <p class= "d-none d-block">Sequoia National Park</p>
@@ -99,11 +98,10 @@
                     </div>
                     <div class="card">
                         <div role="tab" class="card-header bg-success">
-                            <h5>
+               
                                 <a class="collapsed" data-toggle="collapse" data-target="#UW" role="button">
                                     Which university did Mark graduate from?
                                 </a>
-                            </h5>
                             <div class="collapse" id="UW" data-parent="#accordion">
                                 <div class="card-body bg-white">
                                     <p class= "d-none d-block">The University of Washington</p>
@@ -113,11 +111,9 @@
                     </div>
                     <div class="card">
                         <div role="tab" class="card-header bg-success">
-                            <h5>
                                 <a class="collapsed" data-toggle="collapse" data-target="#flower" role="button">
                                 What is Justine's favorite flower?
                                 </a>
-                            </h5>
                             <div class="collapse" id="flower" data-parent="#accordion">
                                 <div class="card-body bg-white">
                                     <p class= "d-none d-block">Gardenia</p>
@@ -127,11 +123,9 @@
                     </div>
                     <div class="card">
                         <div role="tab" class="card-header bg-success">
-                            <h5>
                                 <a class="collapsed" data-toggle="collapse" data-target="#skateboarding" role="button">
                                     Which sport did Mark participate in as a teenager?
                                 </a>
-                            </h5>
                             <div class="collapse" id="skateboarding" data-parent="#accordion" role="button">
                                 <div class="card-body bg-white">
                                     <p class= "d-none d-block">Skateboarding</p>
@@ -258,41 +252,42 @@
         </div>
     </div>
 
-</body>
-
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.googletrans.js"></script>
     <script src="js/scripts.js"></script>
     <!-- endbuild -->
 
-    <script type="text/javascript">
+    <script>
         function googleTranslateElementInit() {
-          new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
+        new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
         }
-    
+
         function triggerHtmlEvent(element, eventName) {
-          var event;
-          if (document.createEvent) {
+        let event;
+        if (document.createEvent) {
             event = document.createEvent('HTMLEvents');
             event.initEvent(eventName, true, true);
             element.dispatchEvent(event);
-          } else {
+        } else {
             event = document.createEventObject();
             event.eventType = eventName;
             element.fireEvent('on' + event.eventType, event);
-          }
         }
-    
+        }
+
         jQuery('.lang-select').click(function() {
-          var theLang = jQuery(this).attr('data-lang');
-          jQuery('.goog-te-combo').val(theLang);
-    
-          window.location = jQuery(this).attr('href');
-          location.reload();
+        let theLang = jQuery(this).attr('data-lang');
+        jQuery('.goog-te-combo').val(theLang);
+
+        window.location = jQuery(this).attr('href');
+        location.reload();
         });
     </script>
+
+</body>
 
 </html>
