@@ -169,6 +169,7 @@ p, a {
 
 .navbar {
   position: sticky;
+  position: -webkit-sticky; /* Safari */
   background-color: #f6f8e3;
 }
 
