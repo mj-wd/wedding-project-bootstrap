@@ -14,7 +14,11 @@
     <!-- endbuild -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Charmonman:wght@400;700&display=swap" rel="stylesheet">    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Charmonman:wght@400;700&display=swap" rel="stylesheet">     <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 
     <title>Justine & Mark's Wedding</title>
 
@@ -27,17 +31,18 @@
             Language
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="list-unstyled ct-language__dropdown">
-        <ul>
-            <li><a class="lang-en lang-select" href="#googtrans(en|en)" data-lang="en" alt="English"><img src="img/flag-usa-icon.png" > English</a></li>
-            <br>
-            <li><a class="lang-es lang-select" href="#googtrans(en|es)" data-lang="es" alt="Español"><img src="img/flag-mexico-icon.png"> Español</a></li>
-            <br>
-            <li><a class="lang-en lang-select" href="#googtrans(en|fr)"  data-lang="en" alt="Français"><img src="img/flag-france-icon.png"> Français</a></li>
-        </ul>
-      </div>
+            <div class="list-unstyled ct-language__dropdown">
+                <ul>
+                    <!-- Note that Nu Html Checker will return errors. However, the below code is plug-and-play from Google. -->
+                    <!-- Note that Google Maps displays in native language by default and will not be translated in English speaking countries.-->
+                    <li><a role="button" class="lang-es lang-select" href="#googtrans(en|es)" data-lang="en"><img src="img/flag-mexico-icon.png" alt="Español"></a></li>
+                    <li><a role="button" class="lang-fr lang-select" href="#googtrans(en|fr)" data-lang="en"><img src="img/flag-france-icon.png" alt="Français"></a></li>
+                    <li><a role="button" class="lang-de lang-select" href="#googtrans(en|de)" data-lang="en"><img src="img/flag-germany-icon.png" alt="Deutsch"></a></li>
+                    <li><a role="button" class="lang-en lang-select" href="#googtrans(en|en)" data-lang="en"><img src="img/flag-usa-icon.png" alt="English"></a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-
     <div class="container dinner-menu">
         <div class="row row-content">
             <div class="col">
@@ -314,8 +319,6 @@
         </div>
     </div>
 
-</body>
-
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
@@ -324,13 +327,13 @@
     <script src="js/scripts.js"></script>
     <!-- endbuild -->
 
-    <script type="text/javascript">
+    <script>
         function googleTranslateElementInit() {
         new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
         }
 
         function triggerHtmlEvent(element, eventName) {
-        var event;
+        let event;
         if (document.createEvent) {
             event = document.createEvent('HTMLEvents');
             event.initEvent(eventName, true, true);
@@ -343,12 +346,14 @@
         }
 
         jQuery('.lang-select').click(function() {
-        var theLang = jQuery(this).attr('data-lang');
+        let theLang = jQuery(this).attr('data-lang');
         jQuery('.goog-te-combo').val(theLang);
 
         window.location = jQuery(this).attr('href');
         location.reload();
         });
     </script>
+
+</body>
 
 </html>

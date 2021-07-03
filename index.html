@@ -17,40 +17,53 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Charmonman:wght@400;700&display=swap" rel="stylesheet">    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Charmonman:wght@400;700&display=swap" rel="stylesheet">     <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <title>Justine & Mark's Wedding</title>
 
 </head>
 
-<body>
+<body id="index">
 
     <!-- Hero stolen from: https://csshint.com/bootstrap-hero-image-examples/
     FEEL FREE TO CHANGE THE APPEARANCE OF THE HERO, DIS JUS FO REFERENCE. BUTT PLEASE FIX TEXT MARGINS AND SM SCREEN SIZE VIEW. IT'S UGLY AF :(-->
-    <div class="hero-container">
-        <div class="hero">
-            <div class="hero-text">
-            <h1>I love Zachary.</h1>
+    <div class="dropdown">
+        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Language
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <div class="list-unstyled ct-language__dropdown">
+                <ul>
+                    <!-- Note that Nu Html Checker will return errors. However, the below code is plug-and-play from Google. -->
+                    <!-- Note that Google Maps displays in native language by default and will not be translated in English speaking countries.-->
+                    <li><a role="button" class="lang-es lang-select" href="#googtrans(en|es)" data-lang="en"><img
+                                src="img/flag-mexico-icon.png" alt="Español"></a></li>
+                    <li><a role="button" class="lang-fr lang-select" href="#googtrans(en|fr)" data-lang="en"><img
+                                src="img/flag-france-icon.png" alt="Français"></a></li>
+                    <li><a role="button" class="lang-de lang-select" href="#googtrans(en|de)" data-lang="en"><img
+                                src="img/flag-germany-icon.png" alt="Deutsch"></a></li>
+                    <li><a role="button" class="lang-en lang-select" href="#googtrans(en|en)" data-lang="en"><img
+                                src="img/flag-usa-icon.png" alt="English"></a></li>
+                </ul>
             </div>
         </div>
     </div>
 
-    <div class="dropdown">
-        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Language
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="list-unstyled ct-language__dropdown">
-        <ul>
-            <li><a class="lang-en lang-select" href="#googtrans(en|en)" data-lang="en" alt="English"><img src="img/flag-usa-icon.png" > English</a></li>
-            <br>
-            <li><a class="lang-es lang-select" href="#googtrans(en|es)" data-lang="es" alt="Español"><img src="img/flag-mexico-icon.png"> Español</a></li>
-            <br>
-            <li><a class="lang-en lang-select" href="#googtrans(en|fr)"  data-lang="en" alt="Français"><img src="img/flag-france-icon.png"> Français</a></li>
-        </ul>
-      </div>
-    </div>  
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <img class="img-fluid mx-auto d-block" src="/img/kiss.jpg" alt="kiss">
+                <div class="carousel-caption" id="hero-caro">
+                    <h1 id="hero-h1">Justine & Mark</h1>
+                    <br>
+                    <h2 id="hero-h2">Save the date!</h2>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+
 
     <nav class="navbar navbar-expand-md navbar-light fixed-bottom">
         <div class="container">
@@ -60,14 +73,20 @@
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link active" href="#"><i class="fas fa-home"></i> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fas fa-people-arrows"></i> About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="locations.html"><i class="fas fa-map-marker-alt"></i> Locations</a></li>
-                    <li class="nav-item"><a class="nav-link" href="dinner-menu.html"><i class="fas fa-hamburger"></i> Dinner</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gifts.html"><i class="fas fa-gift"></i> Gift Registry</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fas fa-people-arrows"></i>
+                            About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="locations.html"><i class="fas fa-map-marker-alt"></i>
+                            Locations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dinner-menu.html"><i class="fas fa-hamburger"></i>
+                            Dinner</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gifts.html"><i class="fas fa-gift"></i> Gift
+                            Registry</a></li>
                 </ul>
             </div>
-            <span class="align-text-bottom" id="modalTogglerText" data-toggle="modal" role="button" data-target="#rsvpModal">RSVP/Contact   <a class="nav-item fas fa-envelope-open-text" id="modalToggler" data-toggle="modal" role="button" data-target="#rsvpModal">
-            </a></span>       
+            <span class="align-text-bottom" id="modalTogglerText" data-toggle="modal" role="button"
+                data-target="#rsvpModal">RSVP/Contact <a class="nav-item fas fa-envelope-open-text" id="modalToggler"
+                    data-toggle="modal" role="button" data-target="#rsvpModal">
+                </a></span>
         </div>
     </nav>
 
@@ -81,81 +100,92 @@
                 <div class="modal-body">
                     <div class="container-fluid">
                         <div class="form-group row">
-                                <label class="col-md-5 col-form-label modal-text">Will you be joining us?</label>
-                                <div class="col-md-1 form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioButton1" value="yes">
-                                    <label class="form-check-label" for="radioButton1">Yes</label>
-                                </div>
-                                <div class="col-md-1 form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioButton2" value="no">
-                                    <label class="form-check-label" for="radioButton2">No</label>
-                                </div>
+                            <label class="col-md-5 col-form-label modal-text">Will you be joining us?</label>
+                            <div class="col-md-1 form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioButton1"
+                                    value="yes">
+                                <label class="form-check-label" for="radioButton1">Yes</label>
+                            </div>
+                            <div class="col-md-1 form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="radioButton2"
+                                    value="no">
+                                <label class="form-check-label" for="radioButton2">No</label>
                             </div>
                         </div>
-                        <form>
-                            <div class="form-group row">
-                                <i class="col-md-2 col-form-label fas fa-id-card"></i>
-                                <div class="col-md-10">
-                                    <input type="text" class="form-control modal-text" name="firstName" placeholder="First Name" />
-                                </div>
+                    </div>
+                    <form>
+                        <div class="form-group row">
+                            <i class="col-md-2 col-form-label fas fa-id-card"></i>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control modal-text" name="firstName"
+                                    placeholder="First Name" />
                             </div>
-                            <div class="form-group row">
-                                <i class="col-md-2 col-form-label fas fa-id-card"></i>
-                                <div class="col-md-10">
-                                    <input type="text" class="form-control modal-text" name="lastName" placeholder="Last Name" />
-                                </div>
+                        </div>
+                        <div class="form-group row">
+                            <i class="col-md-2 col-form-label fas fa-id-card"></i>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control modal-text" name="lastName"
+                                    placeholder="Last Name" />
                             </div>
-                            <div class="form-group row">
-                                <div class="col-md-2 col-form-label">
-                                    <i class="fas fa-user-friends"></i>
-                                </div>
-                                <div class="col-md-10">
-                                    <select name="numOfGuests modal-text" class="form-control form-group">
-                                        <option value="select">Number of Guests (Include Yourself)</option>
-                                        <option value="0">0 (Select if Unable to Attend)</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6 (Maximum Party Size)</option>
-                                    </select>
-                                </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-2 col-form-label">
+                                <i class="fas fa-user-friends"></i>
                             </div>
-                            <div class="form-group row">
-                                <i class="col-md-2 col-form-label fas fa-phone-square-alt"></i>
-                                <div class="col-md-10">
-                                    <input type="tel" class="form-control modal-text" name="telNumber" placeholder="Tel. number" />
-                                </div>
+                            <div class="col-md-10">
+                                <select name="numOfGuests modal-text" class="form-control form-group">
+                                    <option value="select">Number of Guests (Include Yourself)</option>
+                                    <option value="0">0 (Select if Unable to Attend)</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6 (Maximum Party Size)</option>
+                                </select>
                             </div>
-                            <div class="form-group row">
-                                <i class="col-md-2 col-form-label fas fa-envelope-square"></i>
-                                <div class="col-md-10">
-                                    <input type="email" class="form-control modal-text" name="email" placeholder="Email Address" />
-                                </div>
+                        </div>
+                        <div class="form-group row">
+                            <i class="col-md-2 col-form-label fas fa-phone-square-alt"></i>
+                            <div class="col-md-10">
+                                <input type="tel" class="form-control modal-text" name="telNumber"
+                                    placeholder="Tel. number" />
                             </div>
-                            <div class="form-group row">
-                                <i class="col-md-2 col-form-label fas fa-comment-dots"></i>
-                                <div class="col-md-10">
-                                    <textarea class="form-control modal-text" name="comments" placeholder="Comments"></textarea>
-                                </div>
+                        </div>
+                        <div class="form-group row">
+                            <i class="col-md-2 col-form-label fas fa-envelope-square"></i>
+                            <div class="col-md-10">
+                                <input type="email" class="form-control modal-text" name="email"
+                                    placeholder="Email Address" />
                             </div>
-                            <div class="boxItem">
+                        </div>
+                        <div class="form-group row">
+                            <i class="col-md-2 col-form-label fas fa-comment-dots"></i>
+                            <div class="col-md-10">
+                                <textarea class="form-control modal-text" name="comments"
+                                    placeholder="Comments"></textarea>
+                            </div>
+                        </div>
+                        <div class="boxItem">
                             <div class="row form-group">
-                                <div class = "col text-center">
-                                    <button class="btn btn-success modal-button" data-dismiss="modal">Submit RSVP</button>
+                                <div class="col text-center">
+                                    <button class="btn btn-success modal-button" data-dismiss="modal">Submit
+                                        RSVP</button>
                                     <button class="btn btn-secondary modal-button" data-dismiss="modal">Cancel</button>
                                 </div>
                             </div>
 
                             <div class="form-group row">
                                 <div class="col text-center">
-                                    <a class="btn btn-link text-black modal-text" href="mailto:justineymark@gmail.com">justineymark@gmail.com  <i class="fas fa-envelope fa-2x"></i></a>
+                                    <a class="btn btn-link text-black modal-text"
+                                        href="mailto:justineymark@gmail.com">justineymark@gmail.com <i
+                                            class="fas fa-envelope fa-2x"></i></a>
                                 </div>
                             </div>
-                                <div class="form-group row">
-                                    <div class="col text-center">
-                                        <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                            <div class="form-group row">
+                                <div class="col text-center">
+                                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                                            class="fa fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -173,30 +203,30 @@
     <script src="js/scripts.js"></script>
     <!-- endbuild -->
 
-    <script type="text/javascript">
+    <script>
         function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
+            new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT }, 'google_translate_element');
         }
 
         function triggerHtmlEvent(element, eventName) {
-        var event;
-        if (document.createEvent) {
-            event = document.createEvent('HTMLEvents');
-            event.initEvent(eventName, true, true);
-            element.dispatchEvent(event);
-        } else {
-            event = document.createEventObject();
-            event.eventType = eventName;
-            element.fireEvent('on' + event.eventType, event);
-        }
+            let event;
+            if (document.createEvent) {
+                event = document.createEvent('HTMLEvents');
+                event.initEvent(eventName, true, true);
+                element.dispatchEvent(event);
+            } else {
+                event = document.createEventObject();
+                event.eventType = eventName;
+                element.fireEvent('on' + event.eventType, event);
+            }
         }
 
-        jQuery('.lang-select').click(function() {
-        var theLang = jQuery(this).attr('data-lang');
-        jQuery('.goog-te-combo').val(theLang);
+        jQuery('.lang-select').click(function () {
+            let theLang = jQuery(this).attr('data-lang');
+            jQuery('.goog-te-combo').val(theLang);
 
-        window.location = jQuery(this).attr('href');
-        location.reload();
+            window.location = jQuery(this).attr('href');
+            location.reload();
         });
     </script>
 
