@@ -6,11 +6,6 @@ body, html{
   height:100%;
   background-color: #f6f8e3;
 }
-.body {
-  background-color: black;
-  min-width: 100%;
-  min-height: 100%;
-}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Charmonman", cursive;
@@ -32,10 +27,6 @@ ul, .dropdown-translator, .dropdown-menu {
 
 li:not(:last-child) {
   margin-bottom: 8px;
-}
-
-#index {
-  overflow:hidden;
 }
 
 #dropdownMenuButton {
@@ -117,6 +108,16 @@ a, a:hover {
 }
 
 /* ===== Index Page ===== */
+
+.index-body {
+  background-color: black;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#index {
+  overflow:hidden;
+}
 
 .hero-container {
   position: middle;
