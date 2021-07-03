@@ -44,11 +44,19 @@ h1, h2, h3, h4, h5 {
   color: black;
   margin-top: 30px;
   margin-bottom: 10px;
+<<<<<<< Updated upstream
 }
 #hero-caro{
   top:300px;
   bottom:auto;
 }
+=======
+}
+#hero-caro{
+  top:300px;
+  bottom:auto;
+}
+>>>>>>> Stashed changes
 #hero-h1 {
   margin:0;
   color:#28a745;
@@ -57,6 +65,21 @@ h1, h2, h3, h4, h5 {
   margin:0;
   color:#28a745;
 
+<<<<<<< Updated upstream
+}
+@media (max-width: 767px) {
+  #hero-h1 {
+    font-size:6vw;
+  }
+  #hero-caro {
+    top:300px;
+    bottom:auto;
+  }
+  #hero-h2 {
+    font-size: 4vw;
+  }
+=======
+>>>>>>> Stashed changes
 }
 @media (max-width: 767px) {
   #hero-h1 {
@@ -70,6 +93,7 @@ h1, h2, h3, h4, h5 {
     font-size: 4vw;
   }
 }
+
 
 
 h1, h2, h3, h4, h5, h6 {
@@ -159,7 +183,7 @@ p, a {
 
 #modalTogglerText {
   color: #28a745;
-  font-family: "Charmonman", "Open Sans", sans-serif, cursive;
+  font-family: "Charmonman", "Asap", sans-serif, cursive;
   font-size: 20px;
   /*overriding under-the-hood bootstrap default*/
   padding: 0rem !important;
@@ -168,13 +192,13 @@ p, a {
 
 .modal-text { 
   font-size: auto;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Asap", sans-serif;
   color: black;
 }
 
 .modal-button { 
   font-size: auto;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Asap", sans-serif;
   align-items: center;
 }
 
@@ -235,10 +259,6 @@ a, a:hover {
 
 #carouselText {
   color: #eae7c4; }
-
-.carousel-caption {
-  /* background-color: rgba(204, 204, 185, 0.75); */
-}
 
 #dinnerCarousel h3 {
   margin: 0;
