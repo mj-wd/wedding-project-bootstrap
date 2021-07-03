@@ -25,6 +25,9 @@ body, html{
   height:100%;
   background-color: #f6f8e3;
 }
+#index {
+  overflow:hidden;
+}
 
 ul, .dropdown-translator, .dropdown-menu {
   list-style-type: none;
