@@ -45,19 +45,11 @@ h1, h2, h3, h4, h5 {
   color: black;
   margin-top: 30px;
   margin-bottom: 10px;
-<<<<<<< Updated upstream
 }
 #hero-caro{
   top:300px;
   bottom:auto;
 }
-=======
-}
-#hero-caro{
-  top:300px;
-  bottom:auto;
-}
->>>>>>> Stashed changes
 #hero-h1 {
   margin:0;
   color:#28a745;
@@ -66,7 +58,6 @@ h1, h2, h3, h4, h5 {
   margin:0;
   color:#28a745;
 
-<<<<<<< Updated upstream
 }
 @media (max-width: 767px) {
   #hero-h1 {
@@ -79,8 +70,6 @@ h1, h2, h3, h4, h5 {
   #hero-h2 {
     font-size: 4vw;
   }
-=======
->>>>>>> Stashed changes
 }
 @media (max-width: 767px) {
   #hero-h1 {
