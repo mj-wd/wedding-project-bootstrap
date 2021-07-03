@@ -21,7 +21,8 @@ sea green
 */
 
 body, html{
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Asap', sans-serif;
+  font-size: 18px;
   height:100%;
   background-color: #f6f8e3;
 }
@@ -40,7 +41,7 @@ li:not(:last-child) {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: "Charmonman", "Open Sans", sans-serif, cursive;
+  font-family: "Charmonman", cursive;
   color: black;
   margin-top: 30px;
   margin-bottom: 10px;
@@ -70,7 +71,27 @@ h1, h2, h3, h4, h5 {
     font-size: 4vw;
   }
 }
+@media (max-width: 767px) {
+  #hero-h1 {
+    font-size:6vw;
+  }
+  #hero-caro {
+    top:300px;
+    bottom:auto;
+  }
+  #hero-h2 {
+    font-size: 4vw;
+  }
+}
 
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Charmonman", cursive;
+  color: #3d3d3d;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  }
 @media (min-width: 768px) {
   #hero-h1 {
     font-size:6vw;
@@ -95,6 +116,7 @@ h1, h2, h3, h4, h5 {
   #hero-h2 {
     font-size: 6vw;
   }
+
 }
 
 p, a {
@@ -151,7 +173,7 @@ p, a {
 
 #modalTogglerText {
   color: #28a745;
-  font-family: "Charmonman", "Open Sans", sans-serif, cursive;
+  font-family: "Charmonman", "Asap", sans-serif, cursive;
   font-size: 20px;
   /*overriding under-the-hood bootstrap default*/
   padding: 0rem !important;
@@ -160,13 +182,13 @@ p, a {
 
 .modal-text { 
   font-size: auto;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Asap", sans-serif;
   color: black;
 }
 
 .modal-button { 
   font-size: auto;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Asap", sans-serif;
   align-items: center;
 }
 
@@ -228,20 +250,23 @@ a, a:hover {
 #carouselText {
   color: #eae7c4; }
 
-.carousel-caption {
-  /* background-color: rgba(204, 204, 185, 0.75); */
-}
-
 #dinnerCarousel h3 {
   margin: 0;
   padding: 0;
-  font-family: "Charmonman", "Open Sans", sans-serif, cursive;
-  text-shadow: 0px 0px 1px navy;
+  font-family: "Charmonman", cursive;
+  font-weight: bold;
+  font-size: 300%;
+  text-shadow: 0px 0px 5px navy;
+  outline: 5px navy;
   color: rgb(85%, 85%, 85%);
+}
+.dinner-menu h3 {
+  margin: 0;
 }
 .dinner-menu li {
   list-style: none;
   text-align: left;
+  margin-bottom: 20px;
 }
 
 /* === Gift Registry Page === */
