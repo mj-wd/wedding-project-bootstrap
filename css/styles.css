@@ -31,6 +31,10 @@ body, html{
   overflow:hidden;
 }
 
+#dropdownMenuButton {
+  margin-bottom:5px;
+}
+
 ul, .dropdown-translator, .dropdown-menu {
   list-style-type: none;
   background-color: transparent;
@@ -47,17 +51,20 @@ h1, h2, h3, h4, h5 {
   margin-top: 30px;
   margin-bottom: 10px;
 }
-#hero-caro{
-  top:300px;
-  bottom:auto;
+
+.hero-image {
+  background-size:contain;
 }
+
 #hero-h1 {
   margin:0;
-  color:#28a745;
+  color:#f6f8e3;
+  -webkit-text-stroke-width: 1px;
 }
-#hero-h2 {
+#hero-h3 {
   margin:0;
-  color:#28a745;
+  color:#f6f8e3;
+  -webkit-text-stroke-width: 1px;
 
 }
 @media (max-width: 767px) {
@@ -65,43 +72,24 @@ h1, h2, h3, h4, h5 {
     font-size:6vw;
   }
   #hero-caro {
-    top:300px;
+    top:1vw;
+    right:1vw;
     bottom:auto;
   }
-  #hero-h2 {
+  #hero-h3 {
     font-size: 4vw;
   }
 }
-@media (max-width: 767px) {
-  #hero-h1 {
-    font-size:6vw;
-  }
-  #hero-caro {
-    top:300px;
-    bottom:auto;
-  }
-  #hero-h2 {
-    font-size: 4vw;
-  }
-}
-
-
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Charmonman", cursive;
-  color: #3d3d3d;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  }
 @media (min-width: 768px) {
   #hero-h1 {
     font-size:6vw;
   }
   #hero-caro {
-    top:350px;
+    top:1vw;
+    right:1vw;
     bottom:auto;
   }
-  #hero-h2 {
+  #hero-h3 {
     font-size: 4vw;
   }
 }
@@ -111,14 +99,21 @@ h1, h2, h3, h4, h5, h6 {
     font-size:8vw;
   }
   #hero-caro {
-    top:300px;
+    top:1vw;
+    right:1vw;
     bottom:auto;
   }
-  #hero-h2 {
-    font-size: 6vw;
+  #hero-h3 {
+    font-size: 2vw;
   }
 
 }
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Charmonman", cursive;
+  color: #3d3d3d;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  }
 
 p, a {
   text-align: start;
