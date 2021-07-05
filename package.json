@@ -12,7 +12,7 @@
     "scss": "node-sass -o css/ css/",
     "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "usemin": "usemin locations.html -d dist --htmlmin -o dist/locations.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html && usemin dinner-menu.html -d dist --htmlmin -o dist/dinner-menu.html && usemin index.html -d dist --htmlmin -o dist/index.html && usemin gifts.html -d dist --htmlmin -o dist/gifts.html",
     "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
     "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
   },
